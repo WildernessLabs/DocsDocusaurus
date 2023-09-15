@@ -100,28 +100,44 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Facebook',
+                href: 'https://www.facebook.com/wildernesslabs',
+              },
+              {
+                label: 'Twitter',
+                href: 'https://twitter.com/wildernesslabs',
+              },
+              {
+                label: 'GitHub',
+                href: 'https://github.com/WildernessLabs',
+              },
+              {
+                label: 'Slack',
+                href: 'http://slackinvite.wildernesslabs.co/',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Contact',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'hello@wildernesslabs.co',
+                href: 'mailto:hello@wildernesslabs.co',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Portland, Oregon',
+                to: "",
               },
+            ],
+          },
+          {
+            // title: 'Docs',
+            items: [
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Meadow',
+                to: '/docs/Meadow/',
               },
             ],
           },
@@ -129,17 +145,17 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Terms of Use',
+                href: 'https://www.wildernesslabs.co/terms',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Privacy Policy',
+                href: 'https://www.wildernesslabs.co/privacy',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Wilderness Labs`,
       },
       prism: {
         theme: lightCodeTheme,
