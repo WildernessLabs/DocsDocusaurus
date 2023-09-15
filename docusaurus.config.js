@@ -6,20 +6,26 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Wilderness Labs Developer Portal',
+  tagline: 'Wilderness Labs developer documentation and resource site.',
   favicon: 'img/favicon.ico',
+  customFields: {
+    email: 'hello@wildernesslabs.co',
+    twitter_username: 'wildernesslabs',
+    github_username: 'wildernesslabs'
+  },
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-test-site.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/DocsDocusaurus/',
+  trailingSlash: true,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'WildernessLabs', // Usually your GitHub org/user name.
+  projectName: 'DocsDocusaurus', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -42,7 +48,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/WildernessLabs/DocsDocusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
@@ -64,9 +70,9 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        // title: 'My Site',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Wilderness Labs',
           src: 'img/logo.svg',
         },
         items: [
@@ -74,11 +80,17 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Developers',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          // {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://blog.wildernesslabs.co/',
+            label: 'Blog',
+            position: 'left',
+            external: false,
+          },
+          {
+            href: 'https://github.com/WildernessLabs/Documentation',
             label: 'GitHub',
             position: 'right',
           },
@@ -133,6 +145,10 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      colorMode: {
+        defaultMode: 'light',
+        respectPrefersColorScheme: true,
+      }
     }),
 };
 
