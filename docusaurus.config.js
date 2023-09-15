@@ -126,10 +126,6 @@ const config = {
                 label: 'hello@wildernesslabs.co',
                 href: 'mailto:hello@wildernesslabs.co',
               },
-              {
-                label: 'Portland, Oregon',
-                to: "",
-              },
             ],
           },
           {
