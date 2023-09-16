@@ -26,6 +26,7 @@
   * [ ] docs\Meadow\Release_Notes\Beta3\index.md
 * [ ] Add /Hardware and fix hard-coded links
   * [ ] docs/Meadow/Meadow_Basics/IO/Digital/Protocols/I2C/index.md
+* [ ] Update or handle `[``IIODevice``](xref:Meadow.Hardware.IIODevice)` links (e.g., docs\Meadow\Release_Notes\Beta2\index.md)
 
 ## Notes
 
