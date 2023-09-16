@@ -103,7 +103,7 @@ input.Changed += (s, e) =>
 };
 ```
 
-For more information, check out the [Events and IObservable guide](/Meadow/Meadow_Basics/Events_and_IObservable/).
+For more information, check out the [Events and IObservable guide](../../../Meadow_Basics/Events_and_IObservable/).
 
 #### Debounce and Glitch Filtering
 
@@ -195,7 +195,7 @@ input.Changed += async (s, o) =>
 ```
 -->
 
-## [Pulse-Width-Modulation PWM](/Meadow/Meadow_Basics/IO/Digital/PWM/)
+## [Pulse-Width-Modulation PWM](../../../Meadow_Basics/IO/Digital/PWM/)
 
 Digital output ports can be used to generate a _Pulse-Width-Modulation_ (PWM) signal, which approximates an intermediate voltage between `LOW` or `HIGH` by switching between ON and OFF very quickly: 
 
@@ -203,12 +203,12 @@ Digital output ports can be used to generate a _Pulse-Width-Modulation_ (PWM) si
 
 PWM signals are frequently used to control the brightness of LEDs, as well as serve as the control signal for precision motors such as servos and stepper motors.
 
-## [Communication Protocols](/Meadow/Meadow_Basics/IO/Digital/Protocols/)
+## [Communication Protocols](../../../Meadow_Basics/IO/Digital/Protocols/)
 
-Digital IO also includes built-in support for a host of different types of common digital [communication protocols](/Meadow/Meadow_Basics/IO/Digital/Protocols/) including:
+Digital IO also includes built-in support for a host of different types of common digital [communication protocols](../../../Meadow_Basics/IO/Digital/Protocols/) including:
 
-* **[I2C](/Meadow/Meadow_Basics/IO/Digital/Protocols/I2C)**
-* **[SPI](/Meadow/Meadow_Basics/IO/Digital/Protocols/SPI)** (Serial Peripheral Interface)
-* **[UART](/Meadow/Meadow_Basics/IO/Digital/Protocols/UART)** (Serial)
-<!-- * **[CAN](/Meadow/Meadow_Basics/IO/Digital/Protocols/CAN)** -->
-<!-- * **[I2S](/Meadow/Meadow_Basics/IO/Digital/Protocols/I2S)** (Integrated Inter-IC Sound Bus) -->
+* **[I2C](../../../Meadow_Basics/IO/Digital/Protocols/I2C)**
+* **[SPI](../../../Meadow_Basics/IO/Digital/Protocols/SPI)** (Serial Peripheral Interface)
+* **[UART](../../../Meadow_Basics/IO/Digital/Protocols/UART)** (Serial)
+<!-- * **[CAN](../../../Meadow_Basics/IO/Digital/Protocols/CAN)** -->
+<!-- * **[I2S](../../../Meadow_Basics/IO/Digital/Protocols/I2S)** (Integrated Inter-IC Sound Bus) -->

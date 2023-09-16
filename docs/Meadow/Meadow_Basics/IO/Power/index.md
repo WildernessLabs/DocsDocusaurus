@@ -79,7 +79,7 @@ The `3.3V` power rail is exposed via the `3V3` header pin.
 
 ### Analog Reference (`AREF`)
 
-The _analog reference_ (`AREF`) pin provides a reference voltage for the [_Analog to Digital Converter_ (ADC)](/Meadow/Meadow_Basics/IO/Analog/) to compare against. Typically, this should be supplied with `3.3V`, so as a convenience, the `AREF` pin is actually connected to the `3.3V` rail via `0Ω` resistor that is located next to the `D08` pin, just below the main MCU:
+The _analog reference_ (`AREF`) pin provides a reference voltage for the [_Analog to Digital Converter_ (ADC)](../../../Meadow_Basics/IO/Analog/) to compare against. Typically, this should be supplied with `3.3V`, so as a convenience, the `AREF` pin is actually connected to the `3.3V` rail via `0Ω` resistor that is located next to the `D08` pin, just below the main MCU:
 
 ![Photo showing the location of the AREF 0Ω resistor, which is just below the F7 MCU, and on the right side, when the board is turned so that the USB connector is on top. The resistor is immediately to the left of the D08 header pin.](/Common_Files/F7_Micro_AREF_Resistor.svg)
 

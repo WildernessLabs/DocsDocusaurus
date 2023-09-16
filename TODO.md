@@ -24,6 +24,8 @@
   * [ ] docs\Meadow\Meadow.OS\Networking\index.md
   * [ ] docs\Meadow\Meadow.OS\RTC\index.md
   * [ ] docs\Meadow\Release_Notes\Beta3\index.md
+* [ ] Add /Hardware and fix hard-coded links
+  * [ ] docs/Meadow/Meadow_Basics/IO/Digital/Protocols/I2C/index.md
 
 ## Notes
 
