@@ -249,7 +249,7 @@ This is a big release with a ton of stability fixes, an overhaul of the CLI, and
 * **Networking Server Methods** - `UdpClient`, `TcpListener` and `TcpClient` are all working now. Note that we're still working on `HttpListener`.
 * **[Meadow.OS Watchdog Timer](../../Meadow.OS/Automatic_Restarts/)** - You can now use the hardware watch timer, which will automatically restart the device in case of an application hang.
 <!--* **`TextDisplayMenu`** - Meadow.Foundation now has a new library called `TextDisplayMenu` that allows for easy menu creation and interaction.-->
-* **Meadow.Foundation `GraphicsLibrary` Upgrades** - The [Graphics Library](../../Meadow.Foundation/Libraries_and_Frameworks/uGraphics/) available in Meadow.Foundation got some serious performance upgrades, as well as the ability to run `TextDisplayMenu` on any graphics display (as well as `CharacterDisplay`s).
+* **Meadow.Foundation `GraphicsLibrary` Upgrades** - The [Graphics Library](../../Meadow.Foundation/Libraries_and_Frameworks/MicroGraphics/) available in Meadow.Foundation got some serious performance upgrades, as well as the ability to run `TextDisplayMenu` on any graphics display (as well as `CharacterDisplay`s).
 
 ## Meadow.Foundation
 
