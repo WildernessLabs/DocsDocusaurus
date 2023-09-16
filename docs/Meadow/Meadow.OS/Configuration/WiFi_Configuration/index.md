@@ -24,7 +24,7 @@ The contents of this file along with the [`AutomaticallyStartNetwork` value in `
 
 For an example of configuration in use, see the [Config Files sample App](https://github.com/WildernessLabs/Meadow.Core.Samples/tree/main/Source/OS/Config_Files) in the `Meadow.Core.Samples` repo.
 
-<table>
+<!-- <table>
     <tr>
         <td style="width:50%">
             <img alt="Photo showing a Meadow hooked up to an LCD displaying the date, time, indoor and outdoor temperature and a weather icon." src="../../../../Common_Files/Hackster/GraphicsWeather.jpg"/>
@@ -61,4 +61,4 @@ For an example of configuration in use, see the [Config Files sample App](https:
             </p>
         </td>
     </tr>
-</table>
+</table> -->

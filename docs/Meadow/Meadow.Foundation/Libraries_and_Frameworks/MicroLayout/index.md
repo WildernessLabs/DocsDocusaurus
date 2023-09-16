@@ -77,7 +77,7 @@ public void Draw(int oldRow, int newRow)
 
 The project running should look like this:
 
-<img src="meadow-microlayout-menu.gif" style="width:50%" />
+<!-- <img src="meadow-microlayout-menu.gif" style="width:50%" /> -->
 
 The full source for the Menu sample is available in the [Project Lab Samples](https://github.com/WildernessLabs/Meadow.ProjectLab.Samples) repository.
 

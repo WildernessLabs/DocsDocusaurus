@@ -4,7 +4,7 @@ title: Cellular
 subtitle: Connect Meadow to LTE/4G cellular signals
 ---
 
-##  Cellular
+## Cellular
 
 The beta cellular network for the Meadow platform is compatible with various modules, each supporting different network operation modes. The following table describes the network operation modes supported by each module:
 
@@ -14,9 +14,7 @@ The beta cellular network for the Meadow platform is compatible with various mod
 | Quectel BG95-M3          | ✔                  | ✔  | ✔       |
 | Quectel M95              | -                   | -   | ✔       |
 
-
 **Cat-M1**, **NB-IoT**, and **GSM** (Global System for Mobile Communications) are all cellular network technologies with distinct characteristics. **GSM**, the most widely used cellular standard globally, provides higher data rates compared to **NB-IoT** and **Cat-M1** but has higher power consumption. In contrast, **Cat-M1** and **NB-IoT** are optimized for IoT applications. **Cat-M1** offers higher data rates and mobility, while **NB-IoT** provides ultra-low power consumption and extended coverage. The choice among **GSM**, **Cat-M1**, and **NB-IoT** depends on the specific requirements of the application, considering factors such as data rates, power consumption, and coverage area.
-
 
 ## Network configuration
 
@@ -56,7 +54,7 @@ Then, to configure your network you just need to follow these three steps:
     Device:
         ReservedPins: I9;H13;C7
     ```
-    
+
     > **Notes**: You can find the pins `I9`, `H13` and `C7` as `D00`, `D01` and `D10` on the **Meadow F7v2 Feather**, respectively. If you use different pins, you should reserve the corresponding ones, according to the pinout definition present in the [**Meadow F7v2 Feather** datasheet](http://developer.wildernesslabs.co/Meadow/Meadow_Basics/Hardware/Wilderness_Labs_Meadow_F7v2_Datasheet.pdf). For instance, if you want to utilize the `A02` **Meadow F7v2 Feather** pin to turn on the module, you should reserve the corresponding `A3` MCU pin, instead of `C7`.
 
 ## Hardware configuration
@@ -67,9 +65,7 @@ To set up the hardware, the easiest way is to use our **BG770A Cell Wing** by at
 
 To utilize the **BG770A Cell Wing** with the **Meadow F7v2 Feather**, simply attach them, connect an LTE antenna (Rubber ducky or Dome) to the click board IPX connector, aiming for a preferred gain of 5 dBi (recommended) while ensuring a minimum gain of 2 dBi (required), and insert an **M2M** SIM card into the cell module.
 
-![Quectel BG770A/Meadow Cell Wing setup](images/cell_wing.jpeg){: .center-image :standalone}
-
-<p align="center" style="font-size: smaller;">Quectel BG770A/Meadow Cell Wing with Meadow F7v2 Feather setup</p>
+![Quectel BG770A/Meadow Cell Wing with Meadow F7v2 Feather setup.](images/cell_wing.jpeg){: .center-image :standalone}
 
 ### Quectel BG95-M3 - NimbeLink Skywire click board
 
@@ -87,9 +83,7 @@ Also, you need to connect the **Meadow F7v2 Feather** `D10` pin to the `EN` **Ni
 
 Finally, connect an LTE antenna (Rubber ducky or Dome) with the `X1` click board IPX connector, aiming for a preferred gain of 5 dBi (recommended) while ensuring a minimum gain of 2 dBi (required), and insert an **M2M** SIM card into the cell module.
 
-![Quectel BG95-M3/NimbeLink Skywire click board setup](images/bg95.jpeg){: .center-image :standalone}
-
-<p align="center" style="font-size: smaller;">Quectel BG95-M3 click board with Meadow F7v2 Feather setup</p>
+![Quectel BG95-M3/NimbeLink Skywire click board with Meadow F7v2 Feather setup](images/bg95.jpeg){: .center-image :standalone}
 
 ### Quectel M95 - GSM2 click board
 
@@ -107,9 +101,7 @@ Also, you need to connect the **Meadow F7v2 Feather** `D10` pin to the `PWK` **Q
 
 Finally, establish a connection by attaching a GSM antenna (Rubber ducky) with an SMA Plug connector, aiming for a preferred gain of 5 dBi (recommended) while ensuring a minimum gain of 2 dBi (required), and insert a SIM card into the cell module.
 
-![Quectel M95 - GSM2 Click Board Setup](images/m95.jpeg){: .center-image :standalone}
-
-<p align="center" style="font-size: smaller;">Quectel M95/GSM2 click board with Meadow F7v2 Feather setup using an external energy supply connected to the 5V and GND pins</p>
+![Quectel M95/GSM2 click board with Meadow F7v2 Feather setup using an external energy supply connected to the 5V and GND pins.](images/m95.jpeg){: .center-image :standalone}
 
 > **Notes**: To enable **Cat-M1** (LTE-M or eMTC) or **NB-IoT** network modes, a specialized **M2M** (Machine-to-Machine) SIM card is required, distinct from the standard SIM cards used in cellphones. However, for **GSM/GPRS 2G** connections, a standard SIM card can generally be used.
 

@@ -10,46 +10,46 @@ This is a huge release, and is a precursor to `b4.0` while we finish out the las
 
 Improvements and upgrades include:
 
- * **Garbage Collector tuned up for our MCU.**
- * **Application crasher fix.**
- * **Tons of bug fixes and driver improvements.**
- * **Serial/UART events fixed and a big overhaul with a new way to use serial.**
- * **FilterableObserver changes.**
- * **A cleaned up and expanded Meadow.Core sample repo.**
- * **Piles of new Meadow.Foundation drivers.**
- * **GPS/GNSS NMEA processor overhaul.**
- * **Meadow library project template.**
- * **F# Meadow templates.**
- * **Parametric enclosure.**
- * **Meadow EDA schematic and PCB footprint parts.**
+* **Garbage Collector tuned up for our MCU.**
+* **Application crasher fix.**
+* **Tons of bug fixes and driver improvements.**
+* **Serial/UART events fixed and a big overhaul with a new way to use serial.**
+* **FilterableObserver changes.**
+* **A cleaned up and expanded Meadow.Core sample repo.**
+* **Piles of new Meadow.Foundation drivers.**
+* **GPS/GNSS NMEA processor overhaul.**
+* **Meadow library project template.**
+* **F# Meadow templates.**
+* **Parametric enclosure.**
+* **Meadow EDA schematic and PCB footprint parts.**
 
 ### Updating
 
-This release is cut from the `b4.0` work and requires an OS update as well as IDE extension updates. 
-If you're on Windows, it's easy, we've added a one-click upgrade to the extension. However, on macOS 
-(and Linux) it's significantly more complicated. We recommend updating on a Windows machine in Visual 
+This release is cut from the `b4.0` work and requires an OS update as well as IDE extension updates.
+If you're on Windows, it's easy, we've added a one-click upgrade to the extension. However, on macOS
+(and Linux) it's significantly more complicated. We recommend updating on a Windows machine in Visual
 Studio if you have access to one, but the manual steps for macOS and Linux are provided as well.
 
 #### macOS/Linux Manual Instructions
 
-Open a terminal window and execute the following steps. Please note that if you don't have DFU-Util 
+Open a terminal window and execute the following steps. Please note that if you don't have DFU-Util
 installed, you can find instructions on how to install it [here](/Meadow/Getting_Started/Deploying_Meadow/DFU/).
 
 1. Download and unzip the latest [Meadow.OS](http://wldrn.es/latestmeadowos) files.
-2. DFU Meadow.OS.bin:  
+2. DFU Meadow.OS.bin:
   `dfu-util -a 0 -S [serial] -D Meadow.OS.bin -s 0x08000000`
 3. Reset F7 (press `RST` button).
-4. Disable mono (may need to run twice if you get an exception the first time):  
+4. Disable mono (may need to run twice if you get an exception the first time):
   `mono ./Meadow.CLI/Meadow.CLI.exe -s /dev/tty.usbmodem01 --MonoDisable`
-5. Erase flash:  
-  `mono ./Meadow.CLI/Meadow.CLI.exe --EraseFlash --KeepAlive`  
+5. Erase flash:
+  `mono ./Meadow.CLI/Meadow.CLI.exe --EraseFlash --KeepAlive`
    This will take a few minutes. After it says "Bulk erase completed," hit space to exit.
 6. Reset F7.
-7. Upload new Mono Runtime:  
-  `mono ./Meadow.CLI/Meadow.CLI.exe --WriteFile Meadow.OS.Runtime.bin --KeepAlive`  
+7. Upload new Mono Runtime:
+  `mono ./Meadow.CLI/Meadow.CLI.exe --WriteFile Meadow.OS.Runtime.bin --KeepAlive`
    After "Download success," hit space again.
-8. Move the runtime into it's special home on the 2MB partition:  
-  `mono ./Meadow.CLI/Meadow.CLI.exe --MonoFlash --KeepAlive`  
+8. Move the runtime into it's special home on the 2MB partition:
+  `mono ./Meadow.CLI/Meadow.CLI.exe --MonoFlash --KeepAlive`
    After "Mono runtime successfully flashed," hit space to exit.
 9. Reset F7.
 
@@ -57,8 +57,8 @@ installed, you can find instructions on how to install it [here](/Meadow/Getting
 
 #### Garbage Collector Tuning
 
-The Mono garbage collector that we use in Meadow.OS got a major tune-up, making it much 
-more suited for our architecture and use case. You should find that garbage collection 
+The Mono garbage collector that we use in Meadow.OS got a major tune-up, making it much
+more suited for our architecture and use case. You should find that garbage collection
 works far better now than it did before.
 
 #### Application Crash
@@ -76,7 +76,7 @@ Meadow applications from standing up for more than a few minutes has been fixed!
 * [#70 - Assertion at sgen-stw.c:69](https://github.com/WildernessLabs/Meadow_Issues/issues/70) - Fixed as part of the Garbage Collector work.
 * [#77 - PWM duration with TimeScale.MicroSecond off by 10µs](https://github.com/WildernessLabs/Meadow_Issues/issues/77) - Fixed, math error. :)
 * [#89 - All file system objects appear as files](https://github.com/WildernessLabs/Meadow_Issues/issues/89) - Fixed.
-* [#94 - Too many threads cause a crash](https://github.com/WildernessLabs/Meadow_Issues/issues/94) - Fixed! This was a real doozie. 
+* [#94 - Too many threads cause a crash](https://github.com/WildernessLabs/Meadow_Issues/issues/94) - Fixed! This was a real doozie.
   We did a major overhaul of the Garbage Collector for this release.
 
 ### Meadow.Core Improvements
@@ -84,14 +84,15 @@ Meadow applications from standing up for more than a few minutes has been fixed!
 #### Serial/UART Communications
 
 We did a major overhaul of the UART/Serial Port in Meadow for b4.0. Big changes include:
- * **Serial Port Events Fixed** - Serial port events now work, which enables more efficient 
-   communications, without the need for a polling thread.
- * **New `ISerialMessagePort` class** - We fundamentally reworked the way legacy serial 
-   communications work, and created an `ISerialMessagePort` class that modernizes them. 
-   It's thread-safe and asynchronous by default, and massively simplifies communications
-   with serial devices by taking a _message_ approach. We recommend using this class 
-   instead of `ISerialPort` for serial communications from now on.
-   
+
+* **Serial Port Events Fixed** - Serial port events now work, which enables more efficient
+  communications, without the need for a polling thread.
+* **New `ISerialMessagePort` class** - We fundamentally reworked the way legacy serial
+  communications work, and created an `ISerialMessagePort` class that modernizes them.
+  It's thread-safe and asynchronous by default, and massively simplifies communications
+  with serial devices by taking a _message_ approach. We recommend using this class
+  instead of `ISerialPort` for serial communications from now on.
+
 For more info, check out the awesome [Serial Communications Guide](/Meadow/Meadow_Basics/IO/Digital/Protocols/UART/).
 
 To see the new `ISerialMessagePort` class at work, check out the [`SerialMessagePort` Sample](https://github.com/WildernessLabs/Meadow.Core.Samples/tree/main/Source/IO/SerialMessagePort).
@@ -100,15 +101,15 @@ To see the new `ISerialMessagePort` class at work, check out the [`SerialMessage
 
 We renamed `FilterableObserver` to `FilterableChangeObserver`.
 
-We made this naming change because the `FilterableObserver`, as designed, was based on change 
-notification and as such had `Old` and `New`  values, along with built in comparison. However, 
-it became clear that we should also have a non histrionic version for cases where `Old` and `New` 
-had no meaning. In the next beta release we'll likely re-introduce a non-histrionic version of 
+We made this naming change because the `FilterableObserver`, as designed, was based on change
+notification and as such had `Old` and `New`  values, along with built in comparison. However,
+it became clear that we should also have a non histrionic version for cases where `Old` and `New`
+had no meaning. In the next beta release we'll likely re-introduce a non-histrionic version of
 `FilterableObserver`.
 
 #### Meadow.Core Samples
 
-We completely re-did the old `Meadow_Samples` repo and renamed it to 
+We completely re-did the old `Meadow_Samples` repo and renamed it to
 [`Meadow.Core.Samples`](https://github.com/wildernesslabs/Meadow.Core.Samples). The samples are now much better
 organized and all updated to the latest `.csproj` format.
 
@@ -139,8 +140,8 @@ Meadow.Foundation got a pile of new peripheral drivers, including:
 
 #### GPS/GNSS NMEA Processing
 
-We did a major overhaul of the NMEA (GPS/GNSS) sentence processing library. In the process we 
-re-worked, upgraded, and modernized it. It now handles a wider array of sentence structures, 
+We did a major overhaul of the NMEA (GPS/GNSS) sentence processing library. In the process we
+re-worked, upgraded, and modernized it. It now handles a wider array of sentence structures,
 is more fault tolerant, has a better API and is easier to add new decoders to.
 
 Check out the [GPS/GNSS NMEA Sentence Processing Library guide](/Meadow/Meadow.Foundation/Libraries_and_Frameworks/Gps_Gnss_Nmea_Processor/)
@@ -154,15 +155,15 @@ We consolidated the logic and code convention across our LEDs drivers in Meadow.
 
 #### New Meadow Library Templates
 
-We added a new Meadow library project template to both Visual Studio for Windows and Visual Studio 
-for Mac. Meadow library projets automatically have the essential Meadow package references and 
+We added a new Meadow library project template to both Visual Studio for Windows and Visual Studio
+for Mac. Meadow library projets automatically have the essential Meadow package references and
 SDK type all set:
 
 ![](FSharp_Template.png)
 
 #### F# Meadow Templates
 
-We've also released F# templates for both Meadow apps and library projects! 
+We've also released F# templates for both Meadow apps and library projects!
 
 So if you <3 F#, now it's easy to start building Meadow apps with it:
 
@@ -172,8 +173,8 @@ So if you <3 F#, now it's easy to start building Meadow apps with it:
 
 #### Parametric Enclosure
 
-Are you building a project and need an enclosure? We've created an easily modifiable enclosure template 
-in Fusion 360 that allows you to change variables like length/depth/height, as well as the position of 
+Are you building a project and need an enclosure? We've created an easily modifiable enclosure template
+in Fusion 360 that allows you to change variables like length/depth/height, as well as the position of
 Meadow inside, and it'll automatically resize for you:
 
 ![](Meadow_Parametric_Enclosure_Open+Closed_Photo.jpg)
@@ -188,7 +189,6 @@ We've posted schematic symbols, PCB footprints, and 3D files of the Meadow F7 bo
 circuit designs. You can find them in our [Meadow_EDA_Parts repo](https://github.com/WildernessLabs/Meadow_EDA_Parts).
 
 ![](Kicad_f7_symbol.png)
-
 
 ## Beta 3.11
 
@@ -217,11 +217,11 @@ We did a major overhaul to the motion sensor (accelerometers and such) APIs, upd
 #### Driver Improvement
 
 * **`ITextDisplay`** - Updated the API to work with larger variety of display types, `TextDisplayMenu` coming soon!
-* **`RotaryEncoder`** - Is now more responsive when turning quickly 
+* **`RotaryEncoder`** - Is now more responsive when turning quickly
 * **`RgbPwmLed`** - Improved brightness control when setting the color
 * **`Max7219`** - Has been updated to support more display configutations when driving 8x8 led arrays
-* **`TftSpi` Display Driver** - Improved performance when making partial screen updates  
-* **`GraphicsLibrary`** - Performance improvements and several rendering fixes when drawing basic shapes 
+* **`TftSpi` Display Driver** - Improved performance when making partial screen updates
+* **`GraphicsLibrary`** - Performance improvements and several rendering fixes when drawing basic shapes
 * **`Button`** - Long press does not raise click event and is disabled by default
 
 #### `TextDisplayMenu` Draft
@@ -288,8 +288,8 @@ As long as the board is continuously powered, the clock will retain its time. Ch
 
 * [#81 - Feature request: serial buffer overrun event](https://github.com/WildernessLabs/Meadow_Issues/issues/81) - Added!
 * [#79 - PWM.Period cannot be set when TimeScale is different from Seconds](https://github.com/WildernessLabs/Meadow_Issues/issues/79) - Fixed.
-* [#78 - PWM Channel info is null](https://github.com/WildernessLabs/Meadow_Issues/issues/78) - Fixed. 
-* [#71 - Unhandled exceptions do not output information to the Console](https://github.com/WildernessLabs/Meadow_Issues/issues/71) - Fixed. We added exception handling to the `App` class, so they should catch most things. 
+* [#78 - PWM Channel info is null](https://github.com/WildernessLabs/Meadow_Issues/issues/78) - Fixed.
+* [#71 - Unhandled exceptions do not output information to the Console](https://github.com/WildernessLabs/Meadow_Issues/issues/71) - Fixed. We added exception handling to the `App` class, so they should catch most things.
 * [#61 - Meadow Serial Communication not working](https://github.com/WildernessLabs/Meadow_Issues/issues/61) - Fixed. We broke this in the last build. Ooops. Someday we'll have integration tests that run on hardware to catch things like this.
 * [#29 - Pin D04 as DigitalOutputPin is not responsive when pin D03 is setup as PWM.](https://github.com/WildernessLabs/Meadow_Issues/issues/29) - Fixed with hacky workaround. This issue is because of the underlying funkiness of the NuttX API. We've implemented a workaround for it for now. Long term, we'll need to revisit this.
 
@@ -297,7 +297,7 @@ As long as the board is continuously powered, the clock will retain its time. Ch
 
 We've added a new driver for the Veml7700 light sensor and improved the performance of the Max7219 driver. You can find an example of the Max7219 in action in the [Meadow Samples GitHub repo](https://github.com/WildernessLabs/Meadow_Samples/tree/main/Source/MeadowSamples/Meadow.Foundation/Tetris).
 
-## Beta 3.8 
+## Beta 3.8
 
 This is another point release but it gets us another step closer to `b4.0`. The `b3.8` release adds further API stabilization and functionality, specifically focusing on I2C and SPI. This release also takes advantage of the performance increases from `b3.7` to unlock more drivers, including a couple of exciting input peripherals: `AnalogJoystick` and `RotaryEncoder`.
 
@@ -345,9 +345,9 @@ You'll need to [flash a new Meadow.OS binary to your device](/Meadow/Getting_Sta
 
 We enabled various low-level caching mechanisms available on the F7 chip and fixed some long-outstanding memory bugs that were preventing their use up until this point. With these fixes and optimizations, we're able to realize one to two magnitudes of performance increases across various aspects of execution. The most significant being in IO access, which saw an `8,600%` increase since `b3.6`. However, we also saw significant improvement in general execution, as well. The following charts were created from the [Meadow Performance Benchmarking application](https://github.com/WildernessLabs/Meadow_Performance_Benchmarks) readme data:
 
-<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR6LF3jduievLwj3H_JNeO_yFrX3NewR8bAijKCfVsKTOTRuyfdNzvpPdNN0MWrP5-eaAxaRVFu0rn3/pubchart?oid=2104450466&amp;format=interactive"
+<!-- <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR6LF3jduievLwj3H_JNeO_yFrX3NewR8bAijKCfVsKTOTRuyfdNzvpPdNN0MWrP5-eaAxaRVFu0rn3/pubchart?oid=2104450466&amp;format=interactive"
 style="width: -webkit-fill-available;"></iframe>
- 
+
 <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR6LF3jduievLwj3H_JNeO_yFrX3NewR8bAijKCfVsKTOTRuyfdNzvpPdNN0MWrP5-eaAxaRVFu0rn3/pubchart?oid=103861413&amp;format=interactive"
 style="width: -webkit-fill-available;"></iframe>
 
@@ -356,11 +356,11 @@ style="width: -webkit-fill-available;"></iframe>
 style="width: -webkit-fill-available;"></iframe>
 
 <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR6LF3jduievLwj3H_JNeO_yFrX3NewR8bAijKCfVsKTOTRuyfdNzvpPdNN0MWrP5-eaAxaRVFu0rn3/pubchart?oid=867053354&amp;format=interactive"
-style="width: -webkit-fill-available;"></iframe>
+style="width: -webkit-fill-available;"></iframe> -->
 
-**Overall, since `b3.5`, IO writes have gotten `318x` faster. And since the last beta, general operation execution speed is `4-8x` faster.** 
+**Overall, since `b3.5`, IO writes have gotten `318x` faster. And since the last beta, general operation execution speed is `4-8x` faster.**
 
-These improvements made several additional Meadow.Foundation drivers practical, now that execution speed can handle them. 
+These improvements made several additional Meadow.Foundation drivers practical, now that execution speed can handle them.
 
 ### Meadow Deployment
 
@@ -374,7 +374,7 @@ This release is a major leap in API stability. We closed nearly all of the open 
 
 * [#5 - Calling DateTime.Now causes exception](https://github.com/WildernessLabs/Meadow_Issues/issues/5) - Fixed.
 * [#18 - PushButton only works with constructor where Device is passed.](https://github.com/WildernessLabs/Meadow_Issues/issues/18) - Fixed. There was a code issue in the driver itself, the underlying IO was working as expected.
-* [#21 - Issues with multiple buttons](https://github.com/WildernessLabs/Meadow_Issues/issues/21) - Fixed. 
+* [#21 - Issues with multiple buttons](https://github.com/WildernessLabs/Meadow_Issues/issues/21) - Fixed.
 * [#22 - I2C Frequency cannot be set.](https://github.com/WildernessLabs/Meadow_Issues/issues/22) - Fixed. We made it public. Was a silly API mistake.
 * [#43 - Issues with Multiple Analog Inputs](https://github.com/WildernessLabs/Meadow_Issues/issues/43) - Fixed. Multiple analog inputs now work, as expected.
 * [#48 - PwmPorts on D11 and D13 are linked together](https://github.com/WildernessLabs/Meadow_Issues/issues/48) - Fixed.
@@ -394,7 +394,7 @@ With that said, there are still three bugs that we were hoping to squish, but di
 
 ### Meadow.Foundation
 
-This is a big update, there are numerous improvements and fixes across published drivers. 
+This is a big update, there are numerous improvements and fixes across published drivers.
 
 #### New Peripheral Drivers
 
@@ -444,11 +444,11 @@ We fixed the following drivers:
 
 * `PwmLed` - Pulse now works without blinking.
 * `RgbPwmLed` - Pulse and colors now work without blinking. Also, we fixed it to work with common anode LEDs, so it now works with the onboard LED.
-* `PushButton` - Resistor stuff now works. 
+* `PushButton` - Resistor stuff now works.
 
 #### New Peripheral Drivers
 
-This is a big update, there are numerous improvements and fixes across published drivers. 
+This is a big update, there are numerous improvements and fixes across published drivers.
 
 As well, we've published 14 new drivers via NuGet:
 * [PCD8544 LCD display controller](/docs/api/Meadow.Foundation/Meadow.Foundation.Displays.Pcd8544.html)
@@ -474,7 +474,7 @@ Most of the Meadow.CLI changes involve more complete information being returned 
 
 Also, we open-sourced the [Meadow.CLI](https://github.com/WildernessLabs/Meadow.CLI) code. Some of the code is ugly. We know. :)
 
-### Samples and Documentation 
+### Samples and Documentation
 We've updated and standardized all of the sample projects in Meadow.Foundation to match the latest template. And we've invested heavily in our docs, you'll notice we've added details and wiring diagrams for most of our peripheral docs.
 
 ### Updating
@@ -557,7 +557,7 @@ Along with the configuration options, we've also released a [Meadow.Foundation d
 
 ![](ST7789_OLED.jpg)
 
- 
+
 ### Visual Studio IDE Extensions Open-Sourced
 
 We've open sourced the Visual Studio Meadow extensions! We're slowly working towards open sourcing all of the Meadow tooling, but we need to clean a lot of it up first, so this is the first step.
@@ -569,7 +569,7 @@ You can find the source code in the following repos:
 
 ### Meadow.CLI and Visual Studio Extension Enhancements
 
-We've also made some updates to the Meadow.CLI to enable the IDE extensions to check for updates to files already deployed on the Meadow device. 
+We've also made some updates to the Meadow.CLI to enable the IDE extensions to check for updates to files already deployed on the Meadow device.
 
 #### Meadow.CLI Updates
 
@@ -577,7 +577,7 @@ There is a new command, `--ListFilesAndCrcs`, that lists files as well as the [C
 
 #### IDE Extension Enhancements
 
-With the CLI returning CRC values, the IDE extensions now check to see if any files need updating when deploying. This solves an issue where if a dll such as Meadow.Foundation.dll had already been deployed to the device, and a newer version existed in the project, it wouldn't get updated. 
+With the CLI returning CRC values, the IDE extensions now check to see if any files need updating when deploying. This solves an issue where if a dll such as Meadow.Foundation.dll had already been deployed to the device, and a newer version existed in the project, it wouldn't get updated.
 
 ### Updating
 
@@ -613,7 +613,7 @@ To upgrade, you'll need to [flash the latest version of Meadow.OS](/Meadow/Getti
 
 ### Basic Analog Input is Up
 
-We got basic [analog](/Meadow/Meadow_Basics/IO/Analog/) input ports working on pins `A0` through `A3`. To read an analog input value, create an [`AnalogInputPort`](/docs/api/Meadow/Meadow.Hardware.AnalogInputPort.html) on one of those pins and call the [`Read()`](/docs/api/Meadow/Meadow.Hardware.AnalogInputPort.html#Meadow_Hardware_AnalogInputPort_Read_System_Int32_System_Int32_) method. 
+We got basic [analog](/Meadow/Meadow_Basics/IO/Analog/) input ports working on pins `A0` through `A3`. To read an analog input value, create an [`AnalogInputPort`](/docs/api/Meadow/Meadow.Hardware.AnalogInputPort.html) on one of those pins and call the [`Read()`](/docs/api/Meadow/Meadow.Hardware.AnalogInputPort.html#Meadow_Hardware_AnalogInputPort_Read_System_Int32_System_Int32_) method.
 
 Note that advanced `IObservable` and events do not work at this time.
 
@@ -671,8 +671,8 @@ PWM is now live! Along with it, PwmLed, RgbPwmLed, Servo Core, etc.
 
 ```
 IPwmPort pwm = Device.CreatePwmPort(
-    pin: Device.Pins.D05, 
-    frequency: 100, 
+    pin: Device.Pins.D05,
+    frequency: 100,
     dutyCycle: 0.5f);
 pwm.Start();
 ```

@@ -352,7 +352,7 @@ protected void Render()
 
 You can check these MicroGraphics Samples on Hackster that you can try out yourself.
 
-<table>
+<!-- <table>
     <tr>
         <td style="width:50%">
             <img src="../../../../Common_Files/Hackster/GraphicsClock.gif"/>
@@ -389,4 +389,4 @@ You can check these MicroGraphics Samples on Hackster that you can try out yours
             </p>
         </td>
     </tr>
-</table>
+</table> -->

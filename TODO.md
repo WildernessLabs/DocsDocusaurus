@@ -10,8 +10,20 @@
 * [ ] API docs links should be relative to the built site, currently absolute to the live docs until they are generated here.
   * [ ] Generate API docs (possibly via https://github.com/Jan0660/DocFxMarkdownGen)
 * [ ] Handle current docs YAML front matter within the Docusaurus system.
-* [ ] Refactor raw-HTML tables with `style="..."` attributes. Currently blowing up their own page build, which causes linked pages to throw errors for broken links.
+* [ ] Refactor raw HTML with `style="..."` attributes. Currently blowing up their own page build, which can also cause linked pages to throw errors for broken links.
   * [ ] docs\Meadow\Meadow.Foundation\Libraries_and_Frameworks\Maple.Server\index.md
+  * [ ] docs\Meadow\Meadow.Foundation\Libraries_and_Frameworks\MicroGraphics\index.md
+  * [ ] docs\Meadow\Meadow.Foundation\Libraries_and_Frameworks\MicroLayout\index.md
+  * [ ] docs\Meadow\Meadow.Foundation\Libraries_and_Frameworks\TextDisplayMenu\index.md
+  * [ ] docs\Meadow\Meadow.OS\Bluetooth\index.md
+  * [ ] docs\Meadow\Meadow.OS\Cellular\index.md
+  * [ ] docs\Meadow\Meadow.OS\Configuration\index.md
+  * [ ] docs\Meadow\Meadow.OS\Configuration\Application_Settings_Configuration\index.md
+  * [ ] docs\Meadow\Meadow.OS\Configuration\OS_Device_Configuration\index.md
+  * [ ] docs\Meadow\Meadow.OS\Configuration\WiFi_Configuration\index.md
+  * [ ] docs\Meadow\Meadow.OS\Networking\index.md
+  * [ ] docs\Meadow\Meadow.OS\RTC\index.md
+  * [ ] docs\Meadow\Release_Notes\Beta3\index.md
 
 ## Notes
 

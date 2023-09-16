@@ -125,7 +125,7 @@ For more information on getting the current antenna information and switching, s
 
 You can look through these for usa samples in our [Meadow Core Samples](https://github.com/WildernessLabs/Meadow.Core.Samples) repo or refer to these practical projects available on [Hackster](https://www.hackster.io/WildernessLabs).
 
-<table>
+<!-- <table>
     <tr>
         <td style="width:50%">
             <img alt="Photo showing a Meadow hooked up to an LCD displaying the date, time, indoor and outdoor temperature and a weather icon." src="../../../Common_Files/Hackster/GraphicsWeather.jpg"/>
@@ -162,4 +162,4 @@ You can look through these for usa samples in our [Meadow Core Samples](https://
             </p>
         </td>
     </tr>
-</table>
+</table> -->
