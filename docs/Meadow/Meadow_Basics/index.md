@@ -11,4 +11,4 @@ This section covers the fundamentals of creating Meadow applications.
 * [Input & Output (IO)](IO)
 * [Events and `IObservable` Pattern](Events_and_IObservable)
 
-## [Next - Meadow.Foundation](../Meadow.Foundation)
+## [Next - Meadow.Foundation](../Meadow.Foundation/index.md)

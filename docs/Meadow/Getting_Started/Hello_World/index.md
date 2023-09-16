@@ -404,4 +404,4 @@ void ShowColorPulse(Color color, TimeSpan duration)
 Now that you understand the basics of a Meadow application, we recommend learning about the following topics:
 
 * [Hardware I/O](../../Meadow_Basics/IO/)
-* [Meadow.Foundation](../../Meadow.Foundation/)
+* [Meadow.Foundation](../../Meadow.Foundation/index.md)

@@ -31,3 +31,4 @@
 
 * You appear to be able to build successfully locally and have things blow up in deployment during `npm run build`.
 * If a page contains weirdness, like a `style` attribute on a raw HTML element (e.g., [table at the bottom of Maple](http://beta-developer.wildernesslabs.co/Meadow/Meadow.Foundation/Libraries_and_Frameworks/Maple.Server/)), it won't build correctly and won't throw an error. But, after that, any page that references it will have a broken link error, making them fail to build.
+* Sometimes links to a folder with an `index.md` file will work, sometimes they won't. It's not clear why (e.g., docs\Meadow\Meadow_Basics\index.md link to Meadow_Foundation at the bottom).
