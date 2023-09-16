@@ -27,9 +27,10 @@ _screen.Controls.Add(
         HorizontalAlignment = HorizontalAlignment.Center
     });
 ```
+
 It should look like this on a ILI4498 320x240 screen.
 
-<img src="meadow-microlayout-hello-world.jpg" style="width:50%" />
+<!-- <img src="meadow-microlayout-hello-world.jpg" style="width:50%" /> -->
 
 You can move, resize or recolor the controls at run time to easily create effects and animations. For example, I've created a very simple Menu sample for the [ProjectLab v3](https://store.wildernesslabs.co/collections/frontpage/products/project-lab-board) that uses DisplayLabels for the menu items and a DisplayBox that sits behind the DisplayLabels as a "highlight."
 
