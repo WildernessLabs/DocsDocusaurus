@@ -14,11 +14,11 @@ The b5.0 release of Meadow contains a draft subset of BLE features and while cov
 
 The following features are available in this release:
 
-- **User-Definable BLE Definition Tree** - You can create a BLE tree `Definition` of _services_ and _characteristics_ that contain primitive type values including; `int`, `double`, `string`, etc.
-- **BLE Server** - Start a bluetooth server on the Meadow and initialize it with your BLE definition tree.
-- **Accept Client Connections** - Connect to the server from a _client_ device application such as a mobile phone.
-- **Edit Values at Runtime** - Write values to the graph from your managed application. Those values can be read by a BLE Client app.
-- **Value Change Notifications** - Get notified in your Meadow application when a BLE client writes to a characteristic in you BLE tree.
+* **User-Definable BLE Definition Tree** - You can create a BLE tree `Definition` of _services_ and _characteristics_ that contain primitive type values including; `int`, `double`, `string`, etc.
+* **BLE Server** - Start a bluetooth server on the Meadow and initialize it with your BLE definition tree.
+* **Accept Client Connections** - Connect to the server from a _client_ device application such as a mobile phone.
+* **Edit Values at Runtime** - Write values to the graph from your managed application. Those values can be read by a BLE Client app.
+* **Value Change Notifications** - Get notified in your Meadow application when a BLE client writes to a characteristic in you BLE tree.
 
 #### Planned Features
 
@@ -49,7 +49,7 @@ There are several good BLE mobile client applications available from iOS and And
 
 ## Pre-requisites
 
-BLE requires your meadow be updated to the latest b5.0 binaries.  This includes both a Meadow OS and new firmware for the ESP32.  See the [Deploying Meadow.OS Guide](/Meadow/Getting_Started/Deploying_Meadow/) for more information.
+BLE requires your meadow be updated to the latest b5.0 binaries.  This includes both a Meadow OS and new firmware for the ESP32.  See the [Deploying Meadow.OS Guide](../../Getting_Started/Deploying_Meadow/) for more information.
 
 ## Defining a BLE Service Definition
 

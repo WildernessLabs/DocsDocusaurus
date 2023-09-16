@@ -6,7 +6,7 @@ subtitle: Multiline display menu framework for quick prototyping human interface
 
 # Intro
 
-The `TextDisplayMenu` library is an extensible framework for quickly creating hierarchical, editable menus that can display on a display that implements `ITextDisplay` - any graphical display via the [µGraphics Library](/Meadow/Meadow.Foundation/Libraries_and_Frameworks/uGraphics/)) or supported character display and can be driven using input devices such as buttons or rotary encoders.
+The `TextDisplayMenu` library is an extensible framework for quickly creating hierarchical, editable menus that can display on a display that implements `ITextDisplay` - any graphical display via the [MicroGraphics Library](../MicroGraphics/) or supported character display and can be driven using input devices such as buttons or rotary encoders.
 
 ![Video showing navigating a menu on a character display using a rotary encoder dial.](TextDisplayMenu.gif)
 

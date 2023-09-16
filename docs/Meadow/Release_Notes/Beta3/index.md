@@ -33,7 +33,7 @@ Studio if you have access to one, but the manual steps for macOS and Linux are p
 #### macOS/Linux Manual Instructions
 
 Open a terminal window and execute the following steps. Please note that if you don't have DFU-Util
-installed, you can find instructions on how to install it [here](/Meadow/Getting_Started/Deploying_Meadow/DFU/).
+installed, you can find instructions on how to install it [here](../../Getting_Started/Deploying_Meadow/DFU/).
 
 1. Download and unzip the latest [Meadow.OS](http://wldrn.es/latestmeadowos) files.
 2. DFU Meadow.OS.bin:
@@ -93,7 +93,7 @@ We did a major overhaul of the UART/Serial Port in Meadow for b4.0. Big changes 
   with serial devices by taking a _message_ approach. We recommend using this class
   instead of `ISerialPort` for serial communications from now on.
 
-For more info, check out the awesome [Serial Communications Guide](/Meadow/Meadow_Basics/IO/Digital/Protocols/UART/).
+For more info, check out the awesome [Serial Communications Guide](../../Meadow_Basics/IO/Digital/Protocols/UART/).
 
 To see the new `ISerialMessagePort` class at work, check out the [`SerialMessagePort` Sample](https://github.com/WildernessLabs/Meadow.Core.Samples/tree/main/Source/IO/SerialMessagePort).
 
@@ -117,26 +117,26 @@ organized and all updated to the latest `.csproj` format.
 
 Meadow.Foundation got a pile of new peripheral drivers, including:
 
-* [PwmLedBarGraph](/docs/api/Meadow.Foundation/Meadow.Foundation.Leds.PwmLedBarGraph.html)
-* [Displays.Led.FourDigitSevenSegment](/docs/api/Meadow.Foundation/Meadow.Foundation.Displays.Led.FourDigitSevenSegment.html)
-* [Sensors.Location.Gnss.NmeaParsing](/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Location.Gnss.NmeaParsing.html)
-* [FeatherWings.CharlieWing](/docs/api/Meadow.Foundation/Meadow.Foundation.FeatherWings.CharlieWing.html)
-* [FeatherWings.DotstarWing](/docs/api/Meadow.Foundation/Meadow.Foundation.FeatherWings.DotstarWing.html)
-* [FeatherWings.GPSWing](/docs/api/Meadow.Foundation/Meadow.Foundation.FeatherWings.GPSWing.html)
-* [FeatherWings.LedMatrix8x16Wing](/docs/api/Meadow.Foundation/Meadow.Foundation.FeatherWings.LedMatrix8x16Wing.html)
-* [FeatherWings.MotorWing](/docs/api/Meadow.Foundation/Meadow.Foundation.FeatherWings.MotorWing.html)
-* [FeatherWings.OLED128x32Wing](/docs/api/Meadow.Foundation/Meadow.Foundation.FeatherWings.OLED128x32Wing.html)
-* [FeatherWings.ServoWing](/docs/api/Meadow.Foundation/Meadow.Foundation.FeatherWings.ServoWing.html)
-* [ICs.IOExpanders.Is31fl3731](/docs/api/Meadow.Foundation/Meadow.Foundation.ICs.IOExpanders.Is31fl3731.html)
-* [ICs.IOExpanders.Pca9685](/docs/api/Meadow.Foundation/Meadow.Foundation.ICs.IOExpanders.Pca9685.html)
-* [Leds.Apa102](/docs/api/Meadow.Foundation/Meadow.Foundation.Leds.Apa102.html)
-* [Motors.Stepper.A4988](/docs/api/Meadow.Foundation/Meadow.Foundation.Motors.Stepper.A4988.html)
-* [Sensors.Atmospheric.Mpl3115a2](/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Atmospheric.Mpl3115a2.html)
-* [Sensors.Location.MediaTek.Mt3339](/docs/api/Meadow.Foundation/Sensors.Location.MediaTek.Mt3339.html)
-* [Sensors.Light.Max44009](/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Light.Max44009.html)
-* [Sensors.Light.Tsl2591](/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Light.Tsl2591.html)
-* [Sensors.LoadCell.Hx711](/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.LoadCell.Hx711.html)
-* [Sensors.Radio.Rfid.IDxxLA](/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Radio.Rfid.IDxxLA.html)
+* [PwmLedBarGraph](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Leds.PwmLedBarGraph.html)
+* [Displays.Led.FourDigitSevenSegment](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Displays.Led.FourDigitSevenSegment.html)
+* [Sensors.Location.Gnss.NmeaParsing](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Location.Gnss.NmeaParsing.html)
+* [FeatherWings.CharlieWing](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.FeatherWings.CharlieWing.html)
+* [FeatherWings.DotstarWing](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.FeatherWings.DotstarWing.html)
+* [FeatherWings.GPSWing](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.FeatherWings.GPSWing.html)
+* [FeatherWings.LedMatrix8x16Wing](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.FeatherWings.LedMatrix8x16Wing.html)
+* [FeatherWings.MotorWing](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.FeatherWings.MotorWing.html)
+* [FeatherWings.OLED128x32Wing](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.FeatherWings.OLED128x32Wing.html)
+* [FeatherWings.ServoWing](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.FeatherWings.ServoWing.html)
+* [ICs.IOExpanders.Is31fl3731](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.ICs.IOExpanders.Is31fl3731.html)
+* [ICs.IOExpanders.Pca9685](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.ICs.IOExpanders.Pca9685.html)
+* [Leds.Apa102](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Leds.Apa102.html)
+* [Motors.Stepper.A4988](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Motors.Stepper.A4988.html)
+* [Sensors.Atmospheric.Mpl3115a2](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Atmospheric.Mpl3115a2.html)
+* [Sensors.Location.MediaTek.Mt3339](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Sensors.Location.MediaTek.Mt3339.html)
+* [Sensors.Light.Max44009](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Light.Max44009.html)
+* [Sensors.Light.Tsl2591](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Light.Tsl2591.html)
+* [Sensors.LoadCell.Hx711](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.LoadCell.Hx711.html)
+* [Sensors.Radio.Rfid.IDxxLA](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Radio.Rfid.IDxxLA.html)
 
 #### GPS/GNSS NMEA Processing
 
@@ -144,7 +144,7 @@ We did a major overhaul of the NMEA (GPS/GNSS) sentence processing library. In t
 re-worked, upgraded, and modernized it. It now handles a wider array of sentence structures,
 is more fault tolerant, has a better API and is easier to add new decoders to.
 
-Check out the [GPS/GNSS NMEA Sentence Processing Library guide](/Meadow/Meadow.Foundation/Libraries_and_Frameworks/Gps_Gnss_Nmea_Processor/)
+Check out the [GPS/GNSS NMEA Sentence Processing Library guide](../../Meadow.Foundation/Libraries_and_Frameworks/Gps_Gnss_Nmea_Processor/)
 for more information.
 
 #### PwmLed minor change
@@ -196,7 +196,7 @@ Beta 3.11 is a major release that brings a pile of stabilizations and fixes acro
 
 ### Updating
 
-You'll need to [flash a new Meadow.OS binary to your device](/Meadow/Getting_Started/Deploying_Meadow/), upgrade your IDE extension(s), and if you use the Meadow.CLI, you'll also need to download and use the latest version of that as well. All files can be found on the [downloads](/Meadow/Getting_Started/Downloads/) page.
+You'll need to [flash a new Meadow.OS binary to your device](../../Getting_Started/Deploying_Meadow/), upgrade your IDE extension(s), and if you use the Meadow.CLI, you'll also need to download and use the latest version of that as well. All files can be found on the [downloads](../../Getting_Started/Downloads/) page.
 
 ### Meadow.OS Changes
 
@@ -212,7 +212,7 @@ We reduced the time resolution in the underlying OS to `1ms`, down from `10ms`. 
 
 #### Motion Sensor Read/StartUpdating/IObservable fixes
 
-We did a major overhaul to the motion sensor (accelerometers and such) APIs, updating their APIs to match the [`Read()`, `StartUpdating()`, `StopUpdating()` and `IFilterableObservable` pattern](/Meadow/Meadow.Foundation/Working_with_Sensors/) found in the other drivers.
+We did a major overhaul to the motion sensor (accelerometers and such) APIs, updating their APIs to match the [`Read()`, `StartUpdating()`, `StopUpdating()` and `IFilterableObservable` pattern](../../Meadow.Foundation/Working_with_Sensors/) found in the other drivers.
 
 #### Driver Improvement
 
@@ -234,11 +234,11 @@ Beta 3.10 is a cleanup release to fix several regressions introduced in `b3.8` a
 
 ### Updating
 
-You'll need to [flash a new Meadow.OS binary to your device](/Meadow/Getting_Started/Deploying_Meadow/), upgrade your IDE extension(s), and if you use the Meadow.CLI, you'll also need to download and use the latest version of that as well. All files can be found on the [downloads](/Meadow/Getting_Started/Downloads/) page.
+You'll need to [flash a new Meadow.OS binary to your device](../../Getting_Started/Deploying_Meadow/), upgrade your IDE extension(s), and if you use the Meadow.CLI, you'll also need to download and use the latest version of that as well. All files can be found on the [downloads](../../Getting_Started/Downloads/) page.
 
 ### Additional Free Serial Port
 
-Previously, `COM1` (pins `D13` and `D12`) was unavailable for use as a serial port because we were outputting debug information from Meadow.OS on that port. However, we've moved that debug stream to USB, freeing that port (and pins) for use. For more information see the [Serial (UART) guide](/Meadow/Meadow_Basics/IO/Digital/Protocols/UART/).
+Previously, `COM1` (pins `D13` and `D12`) was unavailable for use as a serial port because we were outputting debug information from Meadow.OS on that port. However, we've moved that debug stream to USB, freeing that port (and pins) for use. For more information see the [Serial (UART) guide](../../Meadow_Basics/IO/Digital/Protocols/UART/).
 
 ### Bug Fixes
 
@@ -267,7 +267,7 @@ This release includes bug fixes and performance improvements in several drivers.
 
 ### Updating
 
-You'll need to [flash a new Meadow.OS binary to your device](/Meadow/Getting_Started/Deploying_Meadow/), upgrade your IDE extension(s), and if you use the Meadow.CLI, you'll also need to download and use the latest version of that as well. All files can be found on the [downloads](/Meadow/Getting_Started/Downloads/) page.
+You'll need to [flash a new Meadow.OS binary to your device](../../Getting_Started/Deploying_Meadow/), upgrade your IDE extension(s), and if you use the Meadow.CLI, you'll also need to download and use the latest version of that as well. All files can be found on the [downloads](../../Getting_Started/Downloads/) page.
 
 ### New Features & Changes
 
@@ -282,7 +282,7 @@ Device.SetClock(new DateTime(2020, 3, 30, 12, 0, 0));
 Console.WriteLine($"Today is: {DateTime.Now}");
 ```
 
-As long as the board is continuously powered, the clock will retain its time. Check out the [power guide](/Meadow/Meadow_Basics/IO/Power/) for more information on keeping the clock active.
+As long as the board is continuously powered, the clock will retain its time. Check out the [power guide](../../Meadow_Basics/IO/Power/) for more information on keeping the clock active.
 
 ### Bug Fixes
 
@@ -303,7 +303,7 @@ This is another point release but it gets us another step closer to `b4.0`. The 
 
 ### Updating
 
-You'll need to [flash a new Meadow.OS binary to your device](/Meadow/Getting_Started/Deploying_Meadow/), upgrade your IDE extension(s), and if you use the Meadow.CLI, you'll also need to download and use the latest version of that as well. All files can be found on the [downloads](/Meadow/Getting_Started/Downloads/) page.
+You'll need to [flash a new Meadow.OS binary to your device](../../Getting_Started/Deploying_Meadow/), upgrade your IDE extension(s), and if you use the Meadow.CLI, you'll also need to download and use the latest version of that as well. All files can be found on the [downloads](../../Getting_Started/Downloads/) page.
 
 ### Bug Fixes
 
@@ -320,18 +320,18 @@ There's continued improvement of driver features and stability as well as a hand
 
 We've published eight new drivers:
 
-* [AnalogJoystick](/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Hid.AnalogJoystick.html)
-* [Sensors.Rotary.RotaryEncoder](/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Rotary.RotaryEncoder.html)
-* [Sensors.Rotary.RotaryEncoderWithButton](/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Rotary.RotaryEncoderWithButton.html)
-* [ICs.IOExpanders.Mcp23x08](/docs/api/Meadow.Foundation/Meadow.Foundation.ICs.IOExpanders.Mcp23x08.html)
-* [Displays.Ssd1309](/docs/api/Meadow.Foundation/Meadow.Foundation.Displays.Ssd1309.html)
-* [Sensors.Temperature.Lm75](/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Temperature.Lm75.html)
-* [Sensors.Power.Ina260](/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Power.Ina260.html)
-* [Transceivers.SX127x](/docs/api/Meadow.Foundation/Meadow.Foundation.Transceivers.SX127x.html)
+* [AnalogJoystick](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Hid.AnalogJoystick.html)
+* [Sensors.Rotary.RotaryEncoder](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Rotary.RotaryEncoder.html)
+* [Sensors.Rotary.RotaryEncoderWithButton](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Rotary.RotaryEncoderWithButton.html)
+* [ICs.IOExpanders.Mcp23x08](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.ICs.IOExpanders.Mcp23x08.html)
+* [Displays.Ssd1309](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Displays.Ssd1309.html)
+* [Sensors.Temperature.Lm75](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Temperature.Lm75.html)
+* [Sensors.Power.Ina260](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Power.Ina260.html)
+* [Transceivers.SX127x](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Transceivers.SX127x.html)
 
 ### New Power Guide
 
-We added a [guide on Power IO](/Meadow/Meadow_Basics/IO/Power/) that explains the options for powering the board, battery charging, solar, and more.
+We added a [guide on Power IO](../../Meadow_Basics/IO/Power/) that explains the options for powering the board, battery charging, solar, and more.
 
 ## Beta 3.7
 
@@ -339,7 +339,7 @@ Though this is a point release, it's actually cut from the `b4.0` work, and repr
 
 ### Updating
 
-You'll need to [flash a new Meadow.OS binary to your device](/Meadow/Getting_Started/Deploying_Meadow/), upgrade your IDE extension(s), and if you use the Meadow.CLI, you'll also need to download and use the latest version of that as well. All files can be found on the [downloads](/Meadow/Getting_Started/Downloads/) page.
+You'll need to [flash a new Meadow.OS binary to your device](../../Getting_Started/Deploying_Meadow/), upgrade your IDE extension(s), and if you use the Meadow.CLI, you'll also need to download and use the latest version of that as well. All files can be found on the [downloads](../../Getting_Started/Downloads/) page.
 
 ### Performance Improvements
 
@@ -400,20 +400,20 @@ This is a big update, there are numerous improvements and fixes across published
 
 As well, we've published 13 new drivers via NuGet:
 
-* [ICs.EEPROM.AT24C](/docs/api/Meadow.Foundation/Meadow.Foundation.ICs.EEPROM.At24Cxx.html)
-* [ICs.IOExpanders.x74595](/docs/api/Meadow.Foundation/Meadow.Foundation.ICs.IOExpanders.x74595.html)
-* [RTCs.Ds323x](/docs/api/Meadow.Foundation/Meadow.Foundation.RTCs.Ds323x.html)
-* [Sensors.Atmospheric.Bmp085](/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Atmospheric.Bmp085.html)
-* [Sensors.Atmospheric.Bmp180](/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Atmospheric.Bmp180.html)
-* [Sensors.Atmospheric.Dht10](/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Atmospheric.Dht10.html)
-* [Sensors.Atmospheric.Dht12](/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Atmospheric.Dht12.html)
-* [Sensors.Atmospheric.Ms5611](/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Atmospheric.Ms5611.html)
-* [Sensors.Environmental.Ags01Db](/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Environmental.Ags01Db.html)
-* [Sensors.Light.Bh1745](/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Light.Bh1745.html)
-* [Sensors.Light.Bh1750](/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Light.Bh1750.html)
-* [Sensors.Light.Temt6000](/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Light.Temt6000.html)
-* [Sensors.Motion.ADXL362](/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Motion.Adxl362.html)
-* [Sensors.Motion.Hcsens0040](/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Motion.Hcsens0040.html)
+* [ICs.EEPROM.AT24C](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.ICs.EEPROM.At24Cxx.html)
+* [ICs.IOExpanders.x74595](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.ICs.IOExpanders.x74595.html)
+* [RTCs.Ds323x](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.RTCs.Ds323x.html)
+* [Sensors.Atmospheric.Bmp085](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Atmospheric.Bmp085.html)
+* [Sensors.Atmospheric.Bmp180](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Atmospheric.Bmp180.html)
+* [Sensors.Atmospheric.Dht10](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Atmospheric.Dht10.html)
+* [Sensors.Atmospheric.Dht12](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Atmospheric.Dht12.html)
+* [Sensors.Atmospheric.Ms5611](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Atmospheric.Ms5611.html)
+* [Sensors.Environmental.Ags01Db](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Environmental.Ags01Db.html)
+* [Sensors.Light.Bh1745](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Light.Bh1745.html)
+* [Sensors.Light.Bh1750](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Light.Bh1750.html)
+* [Sensors.Light.Temt6000](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Light.Temt6000.html)
+* [Sensors.Motion.ADXL362](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Motion.Adxl362.html)
+* [Sensors.Motion.Hcsens0040](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Motion.Hcsens0040.html)
 
 
 ## Beta 3.6
@@ -451,20 +451,20 @@ We fixed the following drivers:
 This is a big update, there are numerous improvements and fixes across published drivers.
 
 As well, we've published 14 new drivers via NuGet:
-* [PCD8544 LCD display controller](/docs/api/Meadow.Foundation/Meadow.Foundation.Displays.Pcd8544.html)
-* [MAX7219 led display controller](/docs/api/Meadow.Foundation/Meadow.Foundation.Displays.Max7219.html)
-* [TM1637 led display controller](/docs/api/Meadow.Foundation/Meadow.Foundation.Displays.Tm1637.html)
-* [ULN2003 stepper motor controller](/docs/api/Meadow.Foundation/Meadow.Foundation.Motors.Stepper.Uln2003.html)
-* [HIH6130 I2C temperature and humidity sensor](/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Atmospheric.Hih6130.html)
-* [HTU21D I2C temperature and humidity sensor](/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Atmospheric.Htu21d.html)
-* [SI70xx I2C temperature and humidity sensor](/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Atmospheric.Si70xx.html)
-* [ALS-PT19-315C light sensor](/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Light.Alspt19315C.html)
-* [ADXL335 Analog triple axis, +/-3g accelerometer](/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Motion.Adxl335.html)
-* [ADXL337 Analog triple axis, +/-3g accelerometer](/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Motion.Adxl337.html)
-* [ADXL345 I2C triple axis accelerometer, +/-16g accelerometer](/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Motion.Adxl345.html)
-* [ADXL377 Analog triple axis, +/-200g accelerometer](/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Motion.Adxl377.html)
-* [BNO055 I2C 9-Axis absolute orientation sensor](/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Motion.Bno055.html)
-* [TMP102 I2C temperature sensor](/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Temperature.Tmp102.html)
+* [PCD8544 LCD display controller](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Displays.Pcd8544.html)
+* [MAX7219 led display controller](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Displays.Max7219.html)
+* [TM1637 led display controller](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Displays.Tm1637.html)
+* [ULN2003 stepper motor controller](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Motors.Stepper.Uln2003.html)
+* [HIH6130 I2C temperature and humidity sensor](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Atmospheric.Hih6130.html)
+* [HTU21D I2C temperature and humidity sensor](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Atmospheric.Htu21d.html)
+* [SI70xx I2C temperature and humidity sensor](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Atmospheric.Si70xx.html)
+* [ALS-PT19-315C light sensor](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Light.Alspt19315C.html)
+* [ADXL335 Analog triple axis, +/-3g accelerometer](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Motion.Adxl335.html)
+* [ADXL337 Analog triple axis, +/-3g accelerometer](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Motion.Adxl337.html)
+* [ADXL345 I2C triple axis accelerometer, +/-16g accelerometer](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Motion.Adxl345.html)
+* [ADXL377 Analog triple axis, +/-200g accelerometer](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Motion.Adxl377.html)
+* [BNO055 I2C 9-Axis absolute orientation sensor](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Motion.Bno055.html)
+* [TMP102 I2C temperature sensor](http://developer.wildernesslabs.co/docs/api/Meadow.Foundation/Meadow.Foundation.Sensors.Temperature.Tmp102.html)
 
 ### Meadow.CLI Fixes, Updates, and Open-Sourcing
 
@@ -479,7 +479,7 @@ We've updated and standardized all of the sample projects in Meadow.Foundation t
 
 ### Updating
 
-You'll need to flash new Meadow.OS binaries to your device, upgrade your IDE extension(s), and if you use the Meadow.CLI, you'll also need to download and use the latest version of that as well. All files can be found on the [downloads](/Meadow/Getting_Started/Downloads/) page.
+You'll need to flash new Meadow.OS binaries to your device, upgrade your IDE extension(s), and if you use the Meadow.CLI, you'll also need to download and use the latest version of that as well. All files can be found on the [downloads](../../Getting_Started/Downloads/) page.
 
 ## Beta 3.5
 
@@ -487,7 +487,7 @@ This is quite a big release with new features, including UART, and a major overh
 
 ### Serial/UART
 
-Meadow now has Serial/UART support! Check out the new [UART guide](/Meadow/Meadow_Basics/IO/Digital/Protocols/UART/) for all the details!
+Meadow now has Serial/UART support! Check out the new [UART guide](../../Meadow_Basics/IO/Digital/Protocols/UART/) for all the details!
 
 ### Better Digital Protocol Errs
 
@@ -499,13 +499,13 @@ You can now set the speed of the I2C bus. Somehow we missed this when we launche
 
 ### Meadow.CLI Docs
 
-We've published a [guide for the Meadow.CLI (Command Line Interface)](/Meadow/Meadow_Basics/Meadow_CLI/).
+We've published a [guide for the Meadow.CLI (Command Line Interface)](../../Meadow_Basics/Meadow_CLI/).
 
 ### Meadow.Foundation
 
 #### `Read()`, `StartUpdating()`, and `StopUpdating` Sensor Pattern
 
-Meadow.Foundation got a major sensor overhaul for b3.5, including the new `Read()`, `StartUpdating()`, and `StopUpdating()` pattern for sensor reads. We also published a new [Working with Sensors in Meadow.Foundation](/Meadow/Meadow.Foundation/Working_with_Sensors/) guide that is recommended reading, and explains the new pattern.
+Meadow.Foundation got a major sensor overhaul for b3.5, including the new `Read()`, `StartUpdating()`, and `StopUpdating()` pattern for sensor reads. We also published a new [Working with Sensors in Meadow.Foundation](../../Meadow.Foundation/Working_with_Sensors/) guide that is recommended reading, and explains the new pattern.
 
 #### Display Updates
 
@@ -609,11 +609,11 @@ We upgraded the file system that Meadow uses to LittleFS; which has the distinct
 
 Now, after when you deploy Meadow.OS, the first startup should be very fast, and you won't need to wait for the flash to format.
 
-To upgrade, you'll need to [flash the latest version of Meadow.OS](/Meadow/Getting_Started/Deploying_Meadow/) to your device.
+To upgrade, you'll need to [flash the latest version of Meadow.OS](../../Getting_Started/Deploying_Meadow/) to your device.
 
 ### Basic Analog Input is Up
 
-We got basic [analog](/Meadow/Meadow_Basics/IO/Analog/) input ports working on pins `A0` through `A3`. To read an analog input value, create an [`AnalogInputPort`](/docs/api/Meadow/Meadow.Hardware.AnalogInputPort.html) on one of those pins and call the [`Read()`](/docs/api/Meadow/Meadow.Hardware.AnalogInputPort.html#Meadow_Hardware_AnalogInputPort_Read_System_Int32_System_Int32_) method.
+We got basic [analog](../../Meadow_Basics/IO/Analog/) input ports working on pins `A0` through `A3`. To read an analog input value, create an [`AnalogInputPort`](http://developer.wildernesslabs.co/docs/api/Meadow/Meadow.Hardware.AnalogInputPort.html) on one of those pins and call the [`Read()`](http://developer.wildernesslabs.co/docs/api/Meadow/Meadow.Hardware.AnalogInputPort.html#Meadow_Hardware_AnalogInputPort_Read_System_Int32_System_Int32_) method.
 
 Note that advanced `IObservable` and events do not work at this time.
 
@@ -631,11 +631,11 @@ In order to be compatible with the file system changes, the `Meadow.CLI` has als
 
 ### SPI
 
-We got [SPI](/Meadow/Meadow_Basics/IO/Digital/Protocols/SPI/) validated and merged. We’re excited to get this out, as we know that several of you are working on integrations that require SPI. To use it, you’ll need to flash your Meadow board with the [latest OS firmware binaries](http://wldrn.es/latestmeadowos).
+We got [SPI](../../Meadow_Basics/IO/Digital/Protocols/SPI/) validated and merged. We’re excited to get this out, as we know that several of you are working on integrations that require SPI. To use it, you’ll need to flash your Meadow board with the [latest OS firmware binaries](http://wldrn.es/latestmeadowos).
 
 ### Visual Studio Extension
 
-Our project template is now included enabling the creation of new Meadow Apps within Visual Studio, [check out the update](/Meadow/Getting_Started/Hello_World/). Debugging remains unavailable, but the console app gracefully exists.
+Our project template is now included enabling the creation of new Meadow Apps within Visual Studio, [check out the update](../../Getting_Started/Hello_World/). Debugging remains unavailable, but the console app gracefully exists.
 
 ### Meadow.CLI
 Now available for [download](http://wldrn.es/latestmeadowcli).
@@ -657,15 +657,15 @@ Wahoo!! No more painful JTAG deployment, deploying your app is now a cinch via t
 
 ##### Meadow.CLI
 
-We've created a _Command Line Interface_ for meadow that allows you to deploy a Meadow application to a Meadow device over USB. Check out the guide on how to [Deploy Meadow OS to your Board](/Meadow/Getting_Started/).
+We've created a _Command Line Interface_ for meadow that allows you to deploy a Meadow application to a Meadow device over USB. Check out the guide on how to [Deploy Meadow OS to your Board](../../Getting_Started/).
 
 #### Visual Studio Windows and Mac Extensions
 
-Say hello to productivity! That's right, we now have extensions for [Visual Studio](https://marketplace.visualstudio.com/items?itemName=WildernessLabs.vsmeadow01) and [Visual Studio for Mac](https://addins.monodevelop.com/Project/Index/394) to deploy apps. To get up and running, check out [Hello, World; Meadow-style](/Meadow/Getting_Started/).
+Say hello to productivity! That's right, we now have extensions for [Visual Studio](https://marketplace.visualstudio.com/items?itemName=WildernessLabs.vsmeadow01) and [Visual Studio for Mac](https://addins.monodevelop.com/Project/Index/394) to deploy apps. To get up and running, check out [Hello, World; Meadow-style](../../Getting_Started/).
 
 #### Digital Outputs and Protocols
 
-##### [Pulse-Width-Modulation (PWM)](/Meadow/Meadow_Basics/IO/Digital/PWM/)
+##### [Pulse-Width-Modulation (PWM)](../../Meadow_Basics/IO/Digital/PWM/)
 
 PWM is now live! Along with it, PwmLed, RgbPwmLed, Servo Core, etc.
 
@@ -677,7 +677,7 @@ IPwmPort pwm = Device.CreatePwmPort(
 pwm.Start();
 ```
 
-##### [Inter-Integrated Circuits (I2C)](/Meadow/Meadow_Basics/IO/Digital/Protocols/I2C/)
+##### [Inter-Integrated Circuits (I2C)](../../Meadow_Basics/IO/Digital/Protocols/I2C/)
 
 The I2C protocol is also available in our latest Meadow OS.
 
@@ -698,4 +698,4 @@ GY521Test(i2c); // Pass i2c to an I2C capable device
 * Meadow runtime is slow. For instance, we're currently only able to get about 30-40hz out of the `SoftPwmPort`. There's still a lot of debug code, so this will get much faster in future releases.
 * `GlitchFilterCycleCount` is not implemented in `DigitalInputPort`. This is coming soon.
 * [`Debug.Write` calls don't output to the console](https://github.com/WildernessLabs/Meadow_Issues/issues/3) - Workaround is to use `Console.Write` calls.
-* [Serial Peripheral Interface (SPI)](/Meadow/Meadow_Basics/IO/Digital/Protocols/SPI/) - not working as expected, investigating.
+* [Serial Peripheral Interface (SPI)](../../Meadow_Basics/IO/Digital/Protocols/SPI/) - not working as expected, investigating.

@@ -18,7 +18,7 @@ Meadow IO ports are generally divided into two categories: _Digital_ and _Analog
 
 Digital and analog refer to the type of electrical signal used; either `HIGH`/`LOW` for digital, or a range of voltages for analog, and they're used for different things.
 
-### [Digital IO](IO/Digital/)
+### [Digital IO](Digital/)
 
 Digital IO is often referred to as _General Purpose, Input/Output_ or GPIO.
 

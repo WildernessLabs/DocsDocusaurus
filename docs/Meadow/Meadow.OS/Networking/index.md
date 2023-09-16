@@ -81,7 +81,7 @@ async Task ScanForAccessPoints(IWiFiNetworkAdapter wifi)
 
 Once the network is connected, you can generally use the built-in .NET network methods as usual, however `HttpServer` is not available in this release candidate.
 
-Note: SSL validation can sometimes fail due to Meadow's clock being too far from the current time. This can be resolved by either [configuring Meadow to acquire the network time at startup](../../Meadow.OS/Configuration/OS_Device_Configuration/), or by [setting the clock manually](../../Meadow.OS/RTC/) at runtime.
+Note: SSL validation can sometimes fail due to Meadow's clock being too far from the current time. This can be resolved by either [configuring Meadow to acquire the network time at startup](../Configuration/OS_Device_Configuration/), or by [setting the clock manually](../RTC/) at runtime.
 
 ## HTTP Get Request Example
 
@@ -115,7 +115,7 @@ using (HttpClient client = new HttpClient()) {
 
 Both the Meadow development board and production module have an onboard ceramic chip antenna and a U.FL connector for an external antenna for the 2.4GHz WiFi and Bluetooth radio.
 
-For more information on getting the current antenna information and switching, see the [Antenna guide](../../Meadow_Basics/Networking/Antenna).
+For more information on getting the current antenna information and switching, see the [Antenna guide](Antenna).
 
 # Creating RESTful Web APIs with Maple Server
 

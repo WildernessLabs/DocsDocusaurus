@@ -138,7 +138,7 @@ Default value: 8000000
 
 ### `AutomaticallyStartNetwork`
 
-This parameter determines if the system will automatically attempt to connect to an access point as the board starts. This requires a default access point [configured in a separate `wifi.config.yaml` file](/Meadow/Meadow.OS/Configuration/WiFi_Configuration).
+This parameter determines if the system will automatically attempt to connect to an access point as the board starts. This requires a default access point [configured in a separate `wifi.config.yaml` file](../WiFi_Configuration).
 
 Valid values are:
 

@@ -56,7 +56,7 @@ var name = Resolver.App.InstalledName;
 
 ## Configure Meadow, wi-fi, and application settings
 
-Several aspects of your Meadow hardware and application execution are handled by configuration files that you can deploy with your app. Learn more about these configuration files and options from the [Meadow Configuration details](../Meadow.OS/Configuration).
+Several aspects of your Meadow hardware and application execution are handled by configuration files that you can deploy with your app. Learn more about these configuration files and options from the [Meadow Configuration details](../../Meadow.OS/Configuration).
 
 ## Sample Meadow Application
 

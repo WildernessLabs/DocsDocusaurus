@@ -504,7 +504,7 @@ Meadow.OS now has JiT compilation support, which compiles code on startup to low
 
 While we've thoroughly tested JiT with all samples, there may still be edge cases where unexpected behavior is seen, so JiT is off by default. A later release will make it on by default.
 
-To [enable JIT in your Meadow application](/Meadow/Meadow.OS/Configuration/OS_Device_Configuration)
+To [enable JIT in your Meadow application](../../Meadow.OS/Configuration/OS_Device_Configuration)
 
 1. **Add a Meadow config file** - add a text file named `meadow.config.yaml`
 2. **Configure Build Action** - Ensure file is set to a Build configuration of *none* and is always copied to the Output Directory
@@ -539,7 +539,7 @@ We did a major overhaul to app, network, and OS build-time configuration support
 
 Meadow apps now have sophisticated support for a number of configuration files and formats (both YAML and JSON).
 
-Check out the [Configuration Guide](/Meadow/Meadow.OS/Configuration/) for more information.
+Check out the [Configuration Guide](../../Meadow.OS/Configuration/) for more information.
 
 ## Meadow.Core
 
@@ -568,7 +568,7 @@ If you're moving from a Meadow.OS Beta app to a Meadow.OS Release Candidate app,
 For more information check out the following docs:
 
 * **[Lifecycle Update](Lifecycle_Update)** - Instructions for updating apps from previous betas to the new app pattern.
-* **[Meadow Apps](/Meadow/Meadow_Basics/Apps/)** - Provides an overview of the new app model and lifecycle events.
+* **[Meadow Apps](../../Meadow_Basics/Apps/)** - Provides an overview of the new app model and lifecycle events.
 
 ### Service Resolver
 
@@ -580,11 +580,11 @@ The `Resolver` also contains an instance of a simple `Logger`. This `Logger` sup
 
 ### Application Configuration
 
-`Meadow.Core` now supports application configuration through config files names `app.config.json` or `app.config.yaml`. These files use the Microsoft Configuration Extensions API to maintain familiarity and a common API. Take a look at the [Application Settings Configuration Guide](/Meadow/Meadow.OS/Configuration/Application_Setting_configuration) for more information.
+`Meadow.Core` now supports application configuration through config files names `app.config.json` or `app.config.yaml`. These files use the Microsoft Configuration Extensions API to maintain familiarity and a common API. Take a look at the [Application Settings Configuration Guide](../../Meadow.OS/Configuration/Application_Setting_configuration) for more information.
 
 ### Network APIs
 
-A unified API for getting access to the devices `INetworkAdapters` has been introduced and the old mechanisms for interacting with the WiFi adapter have been deprecated. See the updates in the [Networking Guide](/Meadow/Meadow.OS/Networking) for more information.
+A unified API for getting access to the devices `INetworkAdapters` has been introduced and the old mechanisms for interacting with the WiFi adapter have been deprecated. See the updates in the [Networking Guide](../../Meadow.OS/Networking) for more information.
 
 ### Power & Sleep APIs
 

@@ -12,13 +12,13 @@ Credentials:
     Password: SSIDPassword
 ```
 
-This file will be processed after the [`meadow.config.yaml` file](/Meadow/Meadow.OS/Configuration/OS_Device_Configuration). Remember to set **Copy to Output Directory** to `Copy always` in the properties pane of any configuration files.
+This file will be processed after the [`meadow.config.yaml` file](../OS_Device_Configuration). Remember to set **Copy to Output Directory** to `Copy always` in the properties pane of any configuration files.
 
 The `Ssid` name will be set as the default access point to be used as the system starts. The password will be used when connecting to the access point.
 
 The `wifi.config.yaml` file will be deleted from flash storage after it has been processed and stored in secure storage on the ESP32 as the information is considered sensitive. This prevents the possibility of the file being read at a later point in time.
 
-The contents of this file along with the [`AutomaticallyStartNetwork` value in `meadow.config.yaml`](/Meadow/Meadow.OS/Configuration/OS_Device_Configuration#automaticallystartnetwork) can be used to automatically connect to an access point when the board starts.
+The contents of this file along with the [`AutomaticallyStartNetwork` value in `meadow.config.yaml`](../OS_Device_Configuration#automaticallystartnetwork) can be used to automatically connect to an access point when the board starts.
 
 ## Sample Apps
 

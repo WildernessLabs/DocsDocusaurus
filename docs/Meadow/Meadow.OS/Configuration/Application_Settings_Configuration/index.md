@@ -76,7 +76,7 @@ Update:
 }
 ```
 
-You can learn more about enabling and responding to OtA updates in your Meadow application from the [Over-the-Air Updates documentation](/Meadow/Meadow.OS/Updates/).
+You can learn more about enabling and responding to OtA updates in your Meadow application from the [Over-the-Air Updates documentation](../../Updates/).
 
 ### Custom Developer Application Settings
 
