@@ -12,7 +12,7 @@ layout: Home
 
 ### May 18-19, 2023
 
-**[Wilderness Labs DevCamp 2023](https://youtube.com/playlist?list=PLoP9Fu9zn7qb_gx3OBlH5bX5Ggwu5kCMv)** - We’re excited to announce that we’re hosting our first ever, in-person, DevCamp in Seattle on May 18th/19th, 2023. Join us to be the first to hear some awesome Meadow news. Registration is free. Day 1 will be an in-person portion and is invite-only. Day 2 will be virtual and open to everyone!
+**[Wilderness Labs DevCamp 2023](https://youtube.com/playlist?list=PLoP9Fu9zn7qb_gx3OBlH5bX5Ggwu5kCMv)** - We're excited to announce that we're hosting our first ever, in-person, DevCamp in Seattle on May 18th/19th, 2023. Join us to be the first to hear some awesome Meadow news. Registration is free. Day 1 will be an in-person portion and is invite-only. Day 2 will be virtual and open to everyone!
 
 ### 2022.February.17th
 
