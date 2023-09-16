@@ -550,13 +550,12 @@ For information on how to get started, check out the [VSCode Meadow Extension Gi
 
 ## b5.0 Bug Fixes
 
- * [#108 - `System.IO.FileNotFoundException: Could not load file or assembly 'netstandard, Version=2.0.0.0`](https://github.com/WildernessLabs/Meadow_Issues/issues/108) - Fixed with the .NET Standard 2.1 Support.
- * [#120 - Unable to deploy F# application](https://github.com/WildernessLabs/Meadow_Issues/issues/120) - F# is game again!
- * [#144 - Calls to `HttpListenerContext.Request.RemoteEndPoint` result in `NullReferenceException`](https://github.com/WildernessLabs/Meadow_Issues/issues/144) - Now returns remote IP address.
- * [#146 - WiFi adapter initialized event misspelled](link) - Heh. Fixed. :D
-
+* [#108 - `System.IO.FileNotFoundException: Could not load file or assembly 'netstandard, Version=2.0.0.0`](https://github.com/WildernessLabs/Meadow_Issues/issues/108) - Fixed with the .NET Standard 2.1 Support.
+* [#120 - Unable to deploy F# application](https://github.com/WildernessLabs/Meadow_Issues/issues/120) - F# is game again!
+* [#144 - Calls to `HttpListenerContext.Request.RemoteEndPoint` result in `NullReferenceException`](https://github.com/WildernessLabs/Meadow_Issues/issues/144) - Now returns remote IP address.
+* [#146 - WiFi adapter initialized event misspelled](https://github.com/WildernessLabs/Meadow_Issues/issues/146) - Heh. Fixed. :D
 
 ## Known Issues
 
-  * **Meadow.CLI `--DeleteFile` command not working** - The `--DeleteFile` command will throw an error and also say that the file was deleted successfully, but the file will not actually be deleted.
-  * **Mono may re-enable after doing Meadow.CLI `--MonoUpdateRT` command** - When you're deploying Meadow.OS, mono may re-enable itself after the `--MonoUpdateRT` command. If you get an error when you run the `--FlashESP` command that says it can't upload because mono is enabled, re-run the `--MonoDisable` command.
+* **Meadow.CLI `--DeleteFile` command not working** - The `--DeleteFile` command will throw an error and also say that the file was deleted successfully, but the file will not actually be deleted.
+* **Mono may re-enable after doing Meadow.CLI `--MonoUpdateRT` command** - When you're deploying Meadow.OS, mono may re-enable itself after the `--MonoUpdateRT` command. If you get an error when you run the `--FlashESP` command that says it can't upload because mono is enabled, re-run the `--MonoDisable` command.

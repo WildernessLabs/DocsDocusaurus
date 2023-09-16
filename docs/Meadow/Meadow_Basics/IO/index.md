@@ -24,7 +24,7 @@ Digital IO is often referred to as _General Purpose, Input/Output_ or GPIO.
 
 Digital ports can be set to be `HIGH` (powered at `3.3V`), or `LOW` (grounded at `0V`) which correspond to digital `1` and `0`, respectively. They can also be setup as input ports which can read signal inputs to know if they're `HIGH`, `LOW`, and can also raise notifications on change, via _interrupts_.
 
-For more information, see the [Digital IO guide](IO/Digital/).
+For more information, see the [Digital IO guide](Digital/).
 
 #### Digital Communications Protocols
 

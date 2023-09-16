@@ -263,7 +263,7 @@ The menu can be created programmatically or loaded from JSON, and has a number o
 
 ### `GraphicsLibrary` Updates
 
-We improved performance for all displays using [`GraphicsLibrary`](../../Meadow.Foundation/Libraries_and_Frameworks/uGraphics/) with additional performance for color Tft displays.
+We improved performance for all displays using [`GraphicsLibrary`](../../Meadow.Foundation/Libraries_and_Frameworks/MicroGraphics/) with additional performance for color Tft displays.
 
 `GraphicsLibrary` also includes several new and improved APIs including:
 

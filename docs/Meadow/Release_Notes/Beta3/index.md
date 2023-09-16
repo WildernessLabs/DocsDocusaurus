@@ -33,7 +33,7 @@ Studio if you have access to one, but the manual steps for macOS and Linux are p
 #### macOS/Linux Manual Instructions
 
 Open a terminal window and execute the following steps. Please note that if you don't have DFU-Util
-installed, you can find instructions on how to install it [here](../../Getting_Started/Deploying_Meadow/DFU/).
+installed, you can find instructions on how to install it [here](../../Getting_Started/Deploying_Meadow/).
 
 1. Download and unzip the latest [Meadow.OS](http://wldrn.es/latestmeadowos) files.
 2. DFU Meadow.OS.bin:
