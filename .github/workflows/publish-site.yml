@@ -116,14 +116,17 @@ jobs:
         run: |
           dotnet tool install --global DocFxMarkdownGen
       - name: Run DocFX
+        working-directory: ./src/docfx
         run: |
-          docfx src/docfx/docfx.json
+          docfx docfx.json
       - name: Run DocFxMarkdownGen (dfmg) to generate API .md files
         # dfmg uses config.yaml for input/output paths
+        # Currently config has to be limited to `docfx/api/Meadow`, which means we need to figure out a way to run it for all the other /api directories.
+        # We might be able to set `env:DFMG_YAML_PATH` and `env:DFMG_OUTPUT_PATH` to the correct values for each repo, to generate them all before merging them together.
+        # One option is setting `env: {whatever}` via Actions syntax (https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_iddefaultsrun).
+        working-directory: ./src
         run: |
-          cd src
           dfmg
-          cd ..
 
       # Set up for GitHub Pages build
       - name: Setup Pages
@@ -135,11 +138,9 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         run: |
-          cd src
           npm install
       - name: Build
         run: |
-          cd src
           npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
