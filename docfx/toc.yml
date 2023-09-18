@@ -1,0 +1,12 @@
+- name: Meadow Guides
+  homepage: /Meadow
+- name: Netduino
+  homepage: /Netduino
+- name: Hardware + Circuits
+  homepage: /Hardware
+- name: Electronics Tutorials
+  homepage: /Hardware/Tutorials/Electronics
+- name: Meadow API
+  homepage: /docs/api/Meadow/
+- name: Meadow.Foundation API
+  homepage: /docs/api/Meadow.Foundation/
