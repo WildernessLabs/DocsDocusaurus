@@ -138,10 +138,9 @@ jobs:
           cache: 'npm'
           # Tell Node.js to look for the package-lock.json file in the cloned repo location rather than root.
           cache-dependency-path: src/package-lock.json
-      - name: Install dependencies and build
+      - name: Build (mostly just Docusaurus)
         working-directory: ./src
         run: |
-          npm install
           npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
