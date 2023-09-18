@@ -134,9 +134,13 @@ jobs:
           node-version: 18
           cache: 'npm'
       - name: Install dependencies
-        run: npm install
+        run: |
+          cd src
+          npm install
       - name: Build
-        run: npm run build
+        run: |
+          cd src
+          npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
