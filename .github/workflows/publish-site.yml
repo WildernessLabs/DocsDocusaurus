@@ -117,13 +117,13 @@ jobs:
           dotnet tool install --global DocFxMarkdownGen
       - name: Run DocFX
         run: |
-          cd src
-          docfx docfx/docfx.json
+          docfx src/docfx/docfx.json
       - name: Run DocFxMarkdownGen (dfmg) to generate API .md files
         # dfmg uses config.yaml for input/output paths
         run: |
           cd src
           dfmg
+          cd ..
 
       # Set up for GitHub Pages build
       - name: Setup Pages
