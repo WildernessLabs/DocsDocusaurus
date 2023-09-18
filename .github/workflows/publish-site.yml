@@ -101,10 +101,6 @@ jobs:
           path: Meadow.Foundation.mikroBUS
           ref: main
 
-      - name: Navigate to cloned repo
-        run: |
-          cd src
-
       # Set up for DocFX
       - name: Setup .NET Core SDK 7.0.x
         uses: actions/setup-dotnet@v3
@@ -121,10 +117,12 @@ jobs:
           dotnet tool install --global DocFxMarkdownGen
       - name: Run DocFX
         run: |
+          cd src
           docfx docfx/docfx.json
       - name: Run DocFxMarkdownGen (dfmg) to generate API .md files
         # dfmg uses config.yaml for input/output paths
         run: |
+          cd src
           dfmg
 
       # Set up for GitHub Pages build
