@@ -108,7 +108,7 @@ jobs:
           dotnet-version: |
             7.0.x
       - name: Setup NuGet
-        uses: Nuget/setup-nuget@v1.0.5
+        uses: Nuget/setup-nuget@v1.2.0
       - name: Install DocFX globally
         run: |
           dotnet tool install --global docfx
