@@ -1,5 +1,8 @@
 # TODO
 
+* [ ] Fix generated between-docs links in DocFX (e.g., `IMeadowCloudService` link to `CloudLog` [example build log details](https://github.com/WildernessLabs/DocsDocusaurus/actions/runs/6307613560/job/17141911245#step:22:82))
+  * [ ] Re-enable `onBrokenLinks: 'error'` in Docusaurus config.
+* [ ] Customize link previews (e.g., when shared in Slack, likely also Twitter and friends). Currently shows a Docusaurus image.
 * [ ] Default to index.md when clicking on the Developers top nav item, rather than jumping directly to Meadow Guides.
 * [ ] Handle `{:standalone}` images ([example](http://localhost:3000/DocsDocusaurus/docs/Meadow/Meadow_Basics/IO/Digital/))
 * [ ] Update to WL social card (becomes `<meta property="og:image" content="{whatever}" ... />`)
