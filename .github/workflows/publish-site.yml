@@ -141,6 +141,7 @@ jobs:
       - name: Build (mostly just Docusaurus)
         working-directory: ./src
         run: |
+          npm install
           npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
