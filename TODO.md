@@ -1,9 +1,13 @@
 # TODO
 
+* [ ] Ensure all URLs align or redirect from the current docs site to the new.
+  May need to use third-party system for client-side redirects.
+  Also an option to add stub static files that do client-side redirects or React routing.
+* [ ] Include API override files into generated DocFX content (e.g., https://wildernesslabs.github.io/DocsDocusaurus/docs/api/Meadow/ByteOrder/ vs. http://beta-developer.wildernesslabs.co/docs/api/Meadow/Meadow.ByteOrder.html).
 * [ ] Fix generated between-docs links in DocFX (e.g., `IMeadowCloudService` link to `CloudLog` [example build log details](https://github.com/WildernessLabs/DocsDocusaurus/actions/runs/6307613560/job/17141911245#step:22:82))
   * [ ] Re-enable `onBrokenLinks: 'error'` in Docusaurus config.
 * [ ] Customize link previews (e.g., when shared in Slack, likely also Twitter and friends). Currently shows a Docusaurus image.
-* [ ] Default to index.md when clicking on the Developers top nav item, rather than jumping directly to Meadow Guides.
+* [ ] Default to index.md when clicking on the Developers top nav item, rather than jumping directly to Meadow Guides (e.g., http://developer.wildernesslabs.co/docs/api/Meadow/index.html vs. http://developer.wildernesslabs.co/docs/api/Meadow/Meadow.html; currently only https://wildernesslabs.github.io/DocsDocusaurus/docs/api/Meadow/, which hosts the latter)
 * [ ] Handle `{:standalone}` images ([example](http://localhost:3000/DocsDocusaurus/docs/Meadow/Meadow_Basics/IO/Digital/))
 * [ ] Update to WL social card (becomes `<meta property="og:image" content="{whatever}" ... />`)
   * [ ] Find current WL social card, if any
