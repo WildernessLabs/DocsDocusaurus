@@ -18,7 +18,34 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/Meadow">
-            Meadow
+            Meadow Guides
+          </Link>
+          <Link
+            className="button button--secondary button--lg"
+            to="/docs/Netduino">
+            Netduino
+          </Link>
+          <Link
+            className="button button--secondary button--lg"
+            to="/docs/Hardware">
+            Hardware + Circuits
+          </Link>
+        </div>
+        <div className={styles.buttons}>
+          <Link
+            className="button button--secondary button--lg"
+            to="/docs/Tutorials">
+            Electronics Tutorials
+          </Link>
+          <Link
+            className="button button--secondary button--lg"
+            to="/docs/api/Meadow">
+            Meadow API
+          </Link>
+          <Link
+            className="button button--secondary button--lg"
+            to="/docs/api/Meadow.Foundation">
+            Meadow.Foundation API
           </Link>
         </div>
       </div>

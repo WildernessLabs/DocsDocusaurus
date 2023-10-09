@@ -67,7 +67,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
+      // TODO: Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         // title: 'My Site',
@@ -134,6 +134,22 @@ const config = {
               {
                 label: 'Meadow',
                 to: '/docs/Meadow/',
+              },
+              {
+                label: 'Netduino',
+                to: '/docs/Netduino/',
+              },
+              {
+                label: 'Community',
+                to: 'https://community.wildernesslabs.co/',
+              },
+              {
+                label: 'Developers',
+                to: '/docs/',
+              },
+              {
+                label: 'Blog',
+                to: 'https://blog.wildernesslabs.co/',
               },
             ],
           },
