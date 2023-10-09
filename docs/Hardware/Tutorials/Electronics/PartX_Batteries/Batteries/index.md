@@ -16,17 +16,17 @@ Most common batteries are cylindrical, which offers a compromise between a perfe
 
 The circuit symbol for a battery is two uneven plates:
 
-![Battery Circuit Symbol; two uneven plates at a short distance from each other.](../../../../../../static/Common_Files/SingleCell_Battery.svg){:standalone}
+![Battery Circuit Symbol; two uneven plates at a short distance from each other.](../../../../../../static/Common_Files/Singlecell_Battery.svg){:standalone}
 
 Batteries that have more than one cell, or a battery pack, have the plates repeated:
 
-![](../../../../../../static/Common_Files/MultiCell_Battery.svg){:standalone}
+![](../../../../../../static/Common_Files/Multicell_Battery.svg){:standalone}
 
 In some circuit diagrams, they have polarity markings:
 
-![](../../../../../../static/Common_Files/SingleCell_Battery_w_Polarity.svg){:standalone}
+![](../../../../../../static/Common_Files/Singlecell_Battery_w_Polarity.svg){:standalone}
 
-![](../../../../../../static/Common_Files/MultiCell_Battery_w_Polarity.svg){:standalone}
+![](../../../../../../static/Common_Files/Multicell_Battery_w_Polarity.svg){:standalone}
 
 If no polarity markings are present, polarity can be reasoned by the mnemonic that the longer side has more (`+`), and the short side has less (`-`).
 
