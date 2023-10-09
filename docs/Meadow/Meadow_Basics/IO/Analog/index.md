@@ -95,11 +95,11 @@ It's important to note that unlike the digital inputs (which are `5V` tolerant),
 
 ##### Dividing Input Voltage
 
-If your sensor regularly operates at a higher voltage range, for instance, if it's a `5V` sensor, a two resistor [_voltage divider_](http://developer.wildernesslabs.co/Hardware/Tutorials/Electronics/Part5/Level_Shifting_Lab/) should be used to "divide" the voltage down from `5V` to `3.3V`.
+If your sensor regularly operates at a higher voltage range, for instance, if it's a `5V` sensor, a two resistor [_voltage divider_](../../../../Hardware/Tutorials/Electronics/Part5/Level_Shifting_Lab/) should be used to "divide" the voltage down from `5V` to `3.3V`.
 
 ##### Transient Voltage Suppression
 
-Additionally, it's important to protect the ADC from occasional voltage spikes, typically by using a [Diode](http://developer.wildernesslabs.co/Hardware/Tutorials/Electronics/Part6/General_Diodes) and a [resistor](http://developer.wildernesslabs.co/Hardware/Tutorials/Electronics/Part4/Resistance/) as illustrated in this [tutorial](https://www.electroniclinic.com/input-overvoltage-protection-for-arduino-inputs-using-a-zener-diode/)
+Additionally, it's important to protect the ADC from occasional voltage spikes, typically by using a [Diode](../../../../Hardware/Tutorials/Electronics/Part6/General_Diodes) and a [resistor](../../../../Tutorials/Electronics/Part4/Resistance/) as illustrated in this [tutorial](https://www.electroniclinic.com/input-overvoltage-protection-for-arduino-inputs-using-a-zener-diode/)
 
 ##### Voltage "Storage" and Normalization
 
