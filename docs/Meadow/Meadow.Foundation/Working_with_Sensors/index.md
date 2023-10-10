@@ -11,9 +11,9 @@ Meadow.Foundation extends the underlying [events and IObservable](../../Meadow_B
 
 At a high level, the sensor drivers in Meadow.Foundation provide three important methods to get sensor data:
 
- * **`Read()`** - Convenience method for one-off, or occasional reads, which returns the sensor read value directly to the caller.
- * **`StartUpdating()`** - Starts up a sensor polling thread for automatic change notifications and events.
- * **`StopUpdating()`** - Stops the sensor polling thread, and associated events and notifications.
+* **`Read()`** - Convenience method for one-off, or occasional reads, which returns the sensor read value directly to the caller.
+* **`StartUpdating()`** - Starts up a sensor polling thread for automatic change notifications and events.
+* **`StopUpdating()`** - Stops the sensor polling thread, and associated events and notifications.
 
 ## Automatic Oversampling
 
@@ -31,8 +31,8 @@ Oversampling means to take multiple readings (samples), and then average their v
 
 Nearly all sensor drivers in Meadow.Foundation have support for automatic oversampling built into them, and are generally controlled by the following parameters:
 
- * **`sampleCount`** - Number of samples to take in any given sensor reading.
- * **`sampleIntervalDuration`** - The time, in milliseconds, between samples.
+* **`sampleCount`** - Number of samples to take in any given sensor reading.
+* **`sampleIntervalDuration`** - The time, in milliseconds, between samples.
 
 Additionally, if automatic polling and notifications are used via the `StartSampling()` method, a `standbyDuration` parameter is available that specifies how long to wait, in milliseconds, in between oversampled readings.
 

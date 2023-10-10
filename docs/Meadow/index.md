@@ -18,7 +18,7 @@ If you're just beginning, check out the [Getting Started](./Getting_Started/) wa
 
 Then continue on to the [Meadow Basics](./Meadow_Basics/) Guides to learn about the fundamentals of Meadow applications as well as the current beta feature status.
 
-* [Beta Status](./Meadow_Basics/Status/)
+* [Feature Status](./Meadow_Basics/Status/)
 * [App Fundamentals](./Meadow_Basics/Apps/)
 * [Input/Output (IO)](./Meadow_Basics/IO/)
 
@@ -31,7 +31,7 @@ Then continue on to the [Meadow Basics](./Meadow_Basics/) Guides to learn about 
 
 <!-- Finally, check out [Meadow.Foundation](./Meadow.Foundation/) to learn how it can greatly simplify building connected things. -->
 
-* [Getting Started w/Meadow.Foundation](./Meadow.Foundation/Getting_Started/)
+* [Getting Started with Meadow.Foundation](./Meadow.Foundation/Getting_Started/)
 * [Meadow.Foundation Peripheral Library](./Meadow.Foundation/Peripherals/)
 * [Unified GPIO Architecture](./Meadow.Foundation/Unified_GPIO_Arch/)
 * [Meadow.Foundation Libraries and Frameworks](./Meadow.Foundation/Libraries_and_Frameworks/)
