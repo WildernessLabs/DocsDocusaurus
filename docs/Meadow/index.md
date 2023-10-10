@@ -29,7 +29,7 @@ Then continue on to the [Meadow Basics](./Meadow_Basics/) Guides to learn about 
 
 ## Meadow.Foundation
 
-<!-- Finally, check out [Meadow.Foundation](./Meadow.Foundation/) to learn how it can greatly simplify building connected things. -->
+Finally, check out [Meadow.Foundation](./Meadow.Foundation/index.md) to learn how it can greatly simplify building connected things.
 
 * [Getting Started with Meadow.Foundation](./Meadow.Foundation/Getting_Started/)
 * [Meadow.Foundation Peripheral Library](./Meadow.Foundation/Peripherals/)
