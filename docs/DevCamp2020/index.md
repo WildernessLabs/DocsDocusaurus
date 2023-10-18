@@ -59,3 +59,5 @@ We're wrapping the day up with a fireside chat, hosted by Karina, who will be in
 ![Wilderness Labs Hack Kit](../HackKit/Wilderness_Labs_Hack_Kit.svg){:standalone}
 
 If you're planning on attending, we highly recommend picking up a [Hack Kit Pro](https://store.wildernesslabs.co/collections/frontpage/products/meadow-f7-micro-development-board-w-hack-kit-pro)! Most of the hacks that we'll be covering are based on the components in it.
+
+test
