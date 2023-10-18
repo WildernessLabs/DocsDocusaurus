@@ -1,0 +1,88 @@
+@import "./fonts.scss";
+@import "./variables.scss";
+
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: var($color-brown);
+  --ifm-color-primary-dark: var($color-brown);
+  --ifm-color-primary-darker: var($color-brown);
+  --ifm-color-primary-darkest: var($color-brown);
+  --ifm-color-primary-light: var($color-mid-orange);
+  --ifm-color-primary-lighter: var($color-orange);
+  --ifm-color-primary-lightest: var($color-orange);
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  font-family: "Wavehaus-Book";
+  
+  * {
+    color: $color-brown !important;
+  }
+
+  a {
+    color: $color-blue !important;
+  }
+
+  .footer--dark
+  {
+    background-color: $color-brown !important;
+  }
+
+  .hero
+  {
+    background-color: $color-mid-blue;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Wavehaus-Bold" !important;
+}
+
+code {
+  font-family: "IBM Plex Mono" !important;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme="dark"] {
+  --ifm-color-primary: var($color-brown);
+  --ifm-color-primary-dark: var($color-brown);
+  --ifm-color-primary-darker: var($color-brown);
+  --ifm-color-primary-darkest: var($color-brown);
+  --ifm-color-primary-light: var($color-mid-orange);
+  --ifm-color-primary-lighter: var($color-orange);
+  --ifm-color-primary-lightest: var($color-orange);
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  * {
+    color: white !important;
+  }
+
+  a {
+    color: $color-blue !important;
+  }
+
+  #__docusaurus
+  {
+    background-color: $color-dark-brown !important;
+  }
+
+  .navbar
+  {
+    background-color: $color-dark-brown !important;
+  }
+
+  .footer--dark
+  {
+    background-color: $color-brown !important;
+  }
+}

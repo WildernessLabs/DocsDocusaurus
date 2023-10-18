@@ -15,6 +15,8 @@ const config = {
     github_username: 'wildernesslabs'
   },
 
+  plugins: ['docusaurus-plugin-sass'],
+
   // Set the production url of your site here
   url: 'https://wildernesslabs.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
@@ -58,7 +60,7 @@ const config = {
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve('./src/css/custom.scss'),
         },
       }),
     ],
