@@ -20,9 +20,9 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   font-family: "Wavehaus-Book";
   
-  * {
-    color: $color-brown !important;
-  }
+  // * {
+  //   color: $color-brown !important;
+  // }
 
   a {
     color: $color-blue !important;
@@ -63,9 +63,9 @@ code {
   --ifm-color-primary-lightest: var($color-orange);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 
-  * {
-    color: white !important;
-  }
+  // * {
+  //   color: white !important;
+  // }
 
   a {
     color: $color-blue !important;
