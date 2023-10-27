@@ -28,6 +28,14 @@
     text-decoration: underline;
   }
 
+  article
+  {
+    font-family: "IBM Plex Mono";
+  }
+  // .navbar__item, .menu__link, .table-of-contents__link {
+  //   font-family: "Wavehaus-Book";
+  // }
+
   .menu__link--active {
     color: $color-brown-light2 !important;
   }
@@ -35,7 +43,12 @@
   .footer--dark
   {
     background-color: $color-brown !important;
+
+    a {
+      color: white !important;
+    }
   }
+  
 
   .hero
   {
@@ -71,7 +84,7 @@ code {
     color: white !important;
   }
   a:hover {
-    color: $color-orange !important;
+    color: $color-brown-light2 !important;
     text-decoration: underline;
   }
 
