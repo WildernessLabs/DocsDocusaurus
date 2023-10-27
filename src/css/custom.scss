@@ -21,7 +21,15 @@
   font-family: "Wavehaus-Book";
 
   a {
-    color: $color-blue !important;
+    color: $color-brown-light !important;
+  }
+  a:hover {
+    color: $color-brown-light2 !important;
+    text-decoration: underline;
+  }
+
+  .menu__link--active {
+    color: $color-brown-light2 !important;
   }
 
   .footer--dark
@@ -60,7 +68,15 @@ code {
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 
   a {
-    color: $color-blue !important;
+    color: white !important;
+  }
+  a:hover {
+    color: $color-orange !important;
+    text-decoration: underline;
+  }
+
+  .menu__link--active {
+    color: $color-orange !important;
   }
 
   #__docusaurus
