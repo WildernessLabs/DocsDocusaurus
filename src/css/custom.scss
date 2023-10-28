@@ -28,31 +28,28 @@
     text-decoration: underline;
   }
 
-  article
-  {
-    font-family: "IBM Plex Mono";
+  article {
+    font-family: "IBM Plex Serif";
   }
-  // .navbar__item, .menu__link, .table-of-contents__link {
-  //   font-family: "Wavehaus-Book";
-  // }
 
   .menu__link--active {
     color: $color-brown-light2 !important;
   }
 
-  .footer--dark
-  {
+  .footer--dark {
     background-color: $color-brown !important;
 
     a {
       color: white !important;
     }
   }
-  
 
-  .hero
-  {
+  .hero {
     background-color: $color-mid-blue;
+  }
+
+  .theme-code-block {
+    border: solid 1px $color-blue;
   }
 }
 
@@ -92,18 +89,19 @@ code {
     color: $color-orange !important;
   }
 
-  #__docusaurus
-  {
+  #__docusaurus {
     background-color: $color-dark-brown !important;
   }
 
-  .navbar
-  {
+  .navbar {
     background-color: $color-dark-brown !important;
   }
 
-  .footer--dark
-  {
+  .footer--dark {
     background-color: $color-brown !important;
+  }
+
+  .theme-code-block {
+    border: solid 1px $color-light-grey;
   }
 }
