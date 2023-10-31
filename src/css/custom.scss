@@ -22,6 +22,7 @@
 
   a {
     color: $color-brown-light !important;
+    font-weight: bold;
   }
   a:hover {
     color: $color-brown-light2 !important;
@@ -30,6 +31,10 @@
 
   article {
     font-family: "IBM Plex Serif";
+
+    a {
+      color: $color-dark-brown !important;
+    }
   }
 
   .menu__link--active {
