@@ -79,17 +79,46 @@ const config = {
         },
         items: [
           {
-            type: 'docSidebar',
+            href: "https://www.wildernesslabs.co/developers",
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Developers',
           },
-          // {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            href: "https://www.wildernesslabs.co/enterprise",
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: 'Enterprise',
+          },
+          {
+            href: "https://www.wildernesslabs.co/hardware",
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: 'Hardware',
+          },
+          {
+            href: "https://store.wildernesslabs.co/",
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: 'Shop',
+          },
+          {
+            href: "https://community.wildernesslabs.co/",
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: 'Community',
+          },
           {
             href: 'https://blog.wildernesslabs.co/',
             label: 'Blog',
             position: 'left',
             external: false,
+          },
+          {
+            href: "https://connect.wildernesslabs.co/contact",
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: 'Contact',
           },
           {
             href: 'https://github.com/WildernessLabs/Documentation',
