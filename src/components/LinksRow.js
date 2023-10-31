@@ -1,14 +1,14 @@
 // src/components/LinksRow.js
-import React from 'react';
-import { useDocsSidebar } from "@docusaurus/theme-common/internal"
-import '../css/components/link-row.scss'
+import React from "react";
+import { useDocsSidebar } from "@docusaurus/theme-common/internal";
+import useIsBrowser from "@docusaurus/useIsBrowser";
+import "../css/components/link-row.scss";
 
 function useNavbarItems() {
   let items;
   try {
-    items = useDocsSidebar().items.filter(item => item.type === "category")
-  } catch (err)
-  {
+    items = useDocsSidebar().items.filter((item) => item.type === "category");
+  } catch (err) {
     items = [];
   }
 
@@ -17,9 +17,9 @@ function useNavbarItems() {
   return items;
 }
 
-function getHrefMatch(href)
-{
-  return window.location.pathname.includes(href);
+function getHrefMatch(href) {
+  const isBrowser = useIsBrowser();
+  return isBrowser ? window.location.pathname.includes(href) : false; //isBrowser helps us bypass a build error, where we don't have access to windo.location - https://docusaurus.io/docs/advanced/ssg#useisbrowser
 }
 
 function LinksRow() {
@@ -30,8 +30,10 @@ function LinksRow() {
         <a
           key={i}
           href={item.href}
-          className={getHrefMatch(item.href) ? 'active' : ''}
-        >{item.label}</a>
+          className={getHrefMatch(item.href) ? "active" : ""}
+        >
+          {item.label}
+        </a>
       ))}
     </div>
   );
