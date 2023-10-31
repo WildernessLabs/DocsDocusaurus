@@ -12,7 +12,14 @@ function useNavbarItems() {
     items = [];
   }
 
+  console.log(items);
+
   return items;
+}
+
+function getHrefMatch(href)
+{
+  return window.location.pathname.includes(href);
 }
 
 function LinksRow() {
@@ -23,6 +30,7 @@ function LinksRow() {
         <a
           key={i}
           href={item.href}
+          className={getHrefMatch(item.href) ? 'active' : ''}
         >{item.label}</a>
       ))}
     </div>
