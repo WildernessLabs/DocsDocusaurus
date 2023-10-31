@@ -1,0 +1,8 @@
+@import "../variables.scss";
+
+.links-row {
+    display: flex;
+    gap: 20px;
+    padding: 10px 20px;
+    background-color: $color-brown; /* Any desired background color */
+  }
