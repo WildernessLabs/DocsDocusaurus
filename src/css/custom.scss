@@ -17,6 +17,8 @@
   --ifm-color-primary-lighter: var($color-orange);
   --ifm-color-primary-lightest: var($color-orange);
   --ifm-code-font-size: 95%;
+  --ifm-color-emphasis-300: #12bbf3;
+  --ifm-color-emphasis-200: #12bbf3 !important;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   font-family: "Wavehaus-Book";
   font-size: 18px;
@@ -32,9 +34,20 @@
 
   article {
     font-family: "IBM Plex Serif";
+    padding-top: 1rem;
 
     a {
       color: $color-dark-brown !important;
+    }
+  }
+
+  .docMainContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocPage-Layout-Main-styles-module
+  {
+    .container{
+      &.padding-top--md
+      {
+        padding-top: 0 !important;
+      }
     }
   }
 
@@ -43,7 +56,7 @@
   }
 
   .footer--dark {
-    background-color: $color-brown !important;
+    background-color: $color-dark-blue !important;
 
     a {
       color: white !important;
@@ -95,6 +108,11 @@
     }
     
   }
+
+  .tableOfContents_node_modules-\@docusaurus-theme-classic-lib-theme-TOC-styles-module
+  {
+    top: calc(var(--ifm-navbar-height));
+  }
 }
 
 h1,
@@ -141,15 +159,16 @@ code {
   }
 
   #__docusaurus {
-    background-color: $color-dark-brown !important;
+    background-color: $color-dark-blue !important;
   }
 
   .navbar {
-    background-color: $color-dark-brown !important;
+    background-color: $color-dark-blue !important;
+    border-bottom: solid 1px $color-blue;
   }
 
   .footer--dark {
-    background-color: $color-brown !important;
+    background-color: $color-grey-blue !important;
   }
 
   .theme-code-block {
