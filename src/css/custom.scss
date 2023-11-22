@@ -19,6 +19,7 @@
   --ifm-code-font-size: 95%;
   --ifm-color-emphasis-300: #12bbf3;
   --ifm-color-emphasis-200: #12bbf3 !important;
+  --ifm-menu-link-sublist-icon-filter: invert(62%) sepia(1000%) saturate(2836%) hue-rotate(356deg) brightness(100%) contrast(100%) !important;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   font-family: "Wavehaus-Book";
   font-size: 18px;
@@ -52,7 +53,12 @@
   }
 
   .menu__link--active {
-    color: $color-brown-light2 !important;
+    color: $color-orange !important;
+  }
+
+  .menu__caret:before
+  {
+    background-size: contain;
   }
 
   .footer--dark {
@@ -113,6 +119,25 @@
   {
     top: calc(var(--ifm-navbar-height));
   }
+
+  .theme-doc-sidebar-item-category-level-1
+  {
+    border-top: solid .5px $color-dark-grey;
+    border-bottom: solid .5px;
+    margin: 0;
+  }
+
+  .sidebar_node_modules-\@docusaurus-theme-classic-lib-theme-DocSidebar-Desktop-styles-module
+  {
+    padding-top: 0;
+
+    .menu_node_modules-\@docusaurus-theme-classic-lib-theme-DocSidebar-Desktop-Content-styles-module
+    {
+      padding: 0.5rem 0 0.5rem 0rem;
+      scrollbar-gutter: auto;
+    }
+  }
+
 }
 
 h1,
