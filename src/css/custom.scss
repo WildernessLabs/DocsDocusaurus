@@ -126,20 +126,8 @@
 
   .theme-doc-sidebar-item-category-level-1
   {
-    >:is(:first-child)
-    {
-      border-top: solid .5px $color-dark-grey;
-      border-radius: 0;
-    }
-
-    >:is(:last-child)
-    {
-      border-bottom: solid .1px $color-dark-grey;
-      border-radius: 0;
-    }
-
     border-top: solid .5px $color-dark-grey;
-    border-bottom: solid .5px $color-dark-grey;
+    border-bottom: solid .25px $color-dark-grey;
     margin: 0;
   }
 
