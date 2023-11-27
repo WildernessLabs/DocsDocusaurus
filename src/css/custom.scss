@@ -19,7 +19,9 @@
   --ifm-code-font-size: 95%;
   --ifm-color-emphasis-300: #12bbf3;
   --ifm-color-emphasis-200: #12bbf3 !important;
-  --ifm-menu-link-sublist-icon-filter: invert(62%) sepia(1000%) saturate(2836%) hue-rotate(356deg) brightness(100%) contrast(100%) !important;
+  --ifm-menu-link-sublist-icon-filter: invert(62%) sepia(1000%) saturate(2836%)
+    hue-rotate(356deg) brightness(100%) contrast(100%) !important;
+  --ifm-menu-link-padding-vertical: 5px;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   font-family: "Wavehaus-Book";
   font-size: 18px;
@@ -41,44 +43,58 @@
     }
   }
 
-  main[class^='docMainContainer_']
-  {
-    .container{
-      &.padding-top--md
-      {
+  main[class^="docMainContainer_"] {
+    .container {
+      &.padding-top--md {
         padding-top: 0 !important;
       }
     }
   }
 
-  .navbar
-  {
+  .navbar {
     border-bottom: solid 1px $color-blue;
   }
 
   .menu__link--active {
-    color: $color-orange !important;
+    color: $color-dark-orange !important;
   }
 
-  .menu__list .menu__list
-  {
+  .menu__list .menu__list {
     padding-left: 0;
+    margin-top: 0px;
 
-    .menu__link
-    {
+    .menu__link {
       padding-left: 30px;
+      font-size: 16px;
+      min-height: 34px;
     }
   }
 
-  .menu__list-item-collapsible--active
-  {
-    background: $color-off-white;
-    background-position: -40px;
-    border-radius: 0;
+  .menu__list-item:not(:first-child) {
+    margin-top: 0 !important;
   }
 
-  .menu__caret:before, .menu__link--sublist-caret:after
-  {
+  .menu__list-item-collapsible--active,
+  .menu__link--active:not(.menu__link--sublist),
+  .menu__link:hover {
+    background: $color-off-white;
+    border-radius: 0;
+    color: $color-dark-orange !important;
+    width: calc(var(--doc-sidebar-width) - 1px);
+    position: relative;
+
+    &::before {
+      position: absolute;
+      left: 0px;
+      background-color: $color-orange;
+      height: 100%;
+      min-width: 2px;
+      content: "";
+    }
+  }
+
+  .menu__caret:before,
+  .menu__link--sublist-caret:after {
     background-size: contain;
   }
 
@@ -97,19 +113,16 @@
   .theme-code-block {
     border: solid 1px $color-blue;
   }
-  .theme-doc-sidebar-container
-  {
+  .theme-doc-sidebar-container {
     margin-top: 0px;
   }
 
-  .navbar__items
-  {
+  .navbar__items {
     justify-content: center;
     font-weight: bold;
     font-size: 18px;
 
-    .navbar__link
-    {
+    .navbar__link {
       font-weight: bold;
     }
 
@@ -117,48 +130,39 @@
       justify-content: start;
     }
 
-    .navbar__item
-    {
+    .navbar__item {
       svg {
         display: none;
       }
     }
   }
 
-  .breadcrumbs
-  {
+  .breadcrumbs {
     font-family: "Wavehaus-Book";
 
-    .breadcrumbs__link
-    {
+    .breadcrumbs__link {
       color: $color-brown;
     }
-    
   }
 
-  div[class^='tableOfContents_']
-  {
+  div[class^="tableOfContents_"] {
     top: calc(var(--ifm-navbar-height));
   }
 
-  .theme-doc-sidebar-item-category-level-1
-  {
-    border-top: solid .5px $color-dark-grey;
-    border-bottom: solid .25px $color-dark-grey;
+  .theme-doc-sidebar-item-category-level-1 {
+    border-top: solid 0.5px $color-dark-grey;
+    border-bottom: solid 0.25px $color-dark-grey;
     margin: 0;
   }
 
-  div[class^='sidebar_']
-  {
+  div[class^="sidebar_"] {
     padding-top: 0;
 
-    nav
-    {
+    nav {
       padding: 0.5rem 0 0.5rem 0rem;
       scrollbar-gutter: auto;
     }
   }
-
 }
 
 h1,
@@ -194,7 +198,6 @@ code {
   }
 
   article {
-
     a {
       color: white !important;
     }
@@ -220,8 +223,7 @@ code {
     border: solid 1px $color-light-grey;
   }
 
-  .breadcrumbs__link
-    {
-      color: white !important;
-    }
+  .breadcrumbs__link {
+    color: white !important;
+  }
 }
