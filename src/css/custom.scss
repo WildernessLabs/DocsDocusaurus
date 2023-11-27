@@ -60,6 +60,23 @@
     color: $color-orange !important;
   }
 
+  .menu__list .menu__list
+  {
+    padding-left: 0;
+
+    .menu__link
+    {
+      padding-left: 30px;
+    }
+  }
+
+  .menu__list-item-collapsible--active
+  {
+    background: $color-off-white;
+    background-position: -40px;
+    border-radius: 0;
+  }
+
   .menu__caret:before, .menu__link--sublist-caret:after
   {
     background-size: contain;
