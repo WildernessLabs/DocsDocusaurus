@@ -69,7 +69,6 @@
     .menu__link {
       padding-left: 30px;
       font-size: 16px;
-      min-height: 34px;
     }
   }
 
@@ -110,8 +109,8 @@
   .menu__caret:before,
   .menu__link--sublist-caret:after
   {
-    width: 1rem;
-    min-width: 1rem;
+    width: 20px;
+    min-width: 20px;
   }
 
   .menu__caret:before,
