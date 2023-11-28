@@ -24,6 +24,7 @@
   --ifm-menu-link-padding-vertical: 5px;
   --ifm-menu-link-sublist-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path fill="rgba(0,0,0,1)" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>');
   --ifm-transition-fast: 0ms !important;
+  --ifm-transition-slow: 0ms !important;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   font-family: "Wavehaus-Book";
   font-size: 18px;
@@ -78,6 +79,7 @@
     border-bottom: solid 0.25px $color-dark-grey;
     border-top: solid 0.25px $color-dark-grey;
     border-radius: 0;
+    width: calc(var(--doc-sidebar-width) - 1px);
   }
 
   .menu__list-item-collapsible--active,
@@ -87,7 +89,6 @@
     background: $color-off-white;
     border-radius: 0;
     color: $color-dark-orange !important;
-    width: calc(var(--doc-sidebar-width) - 1px);
     position: relative;
 
     a {
@@ -106,6 +107,12 @@
     }
   }
 
+  .menu__caret:before,
+  .menu__link--sublist-caret:after
+  {
+    width: 1rem;
+    min-width: 1rem;
+  }
 
   .menu__caret:before,
   .menu__link--sublist-caret:after {
@@ -162,10 +169,19 @@
   div[class^="tableOfContents_"] {
     top: calc(var(--ifm-navbar-height));
   }
+  .theme-doc-sidebar-item-link-level-1
+  {
+    font-size: 17px;
+  }
 
   .theme-doc-sidebar-item-category-level-1 {
     margin: 0;
 
+    a
+    {
+      font-size: 17px;
+    }
+    
     ul {
 
       .menu__list-item-collapsible
