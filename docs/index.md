@@ -6,7 +6,7 @@ layout: Home
 
 ## Upcoming Events
 
-<!-- -->
+TBD
 
 ## Past Events
 
