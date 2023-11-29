@@ -48,10 +48,22 @@
 
   main[class^="docMainContainer_"] {
     .container {
-      &.padding-top--md {
-        padding-top: 0 !important;
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+
+      .row
+      {
+        div[class^="col col--3"] {
+          border-left: 1px solid var(--ifm-toc-border-color);
+          padding: 0 1rem 0 0;
+          margin-left: 1rem;
+        }
       }
     }
+  }
+
+  div[class^="col docItemCol_"] {
+    padding-bottom: 2rem !important;
   }
 
   .navbar {
@@ -167,6 +179,12 @@
 
   div[class^="tableOfContents_"] {
     top: calc(var(--ifm-navbar-height));
+    height: 100%;
+
+    .table-of-contents
+    {
+      border: none;
+    }
   }
   .theme-doc-sidebar-item-link-level-1
   {
