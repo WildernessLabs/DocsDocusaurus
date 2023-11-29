@@ -53,6 +53,8 @@
 
       .row
       {
+        flex-wrap: nowrap;
+
         div[class^="col col--3"] {
           border-left: 1px solid var(--ifm-toc-border-color);
           padding: 0 1rem 0 0;
