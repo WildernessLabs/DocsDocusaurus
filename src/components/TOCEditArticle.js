@@ -8,7 +8,7 @@ function TOCEditArticle() {
   return (
     <div className="toc-edit-article">
       <a href={metadata.editUrl} target="_blank">
-        Edit <img src="/img/pencil.svg" alt="Edit this page" />
+        Edit <img src="/DocsDocusaurus/img/pencil.svg" alt="Edit this page" />
       </a>
       <div className="separator"></div>
     </div>
