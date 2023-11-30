@@ -240,6 +240,16 @@
   @media screen and (min-width: 996px) {
     overflow-x: hidden;
   }
+
+  .tabs__item
+  {
+    font-family: "Wavehaus-Book";
+    color: $color-brown;
+  }
+  .tabs__item--active
+  {
+    border-bottom-color: $color-orange;
+  }
 }
 
 h1,
@@ -303,5 +313,10 @@ code {
 
   .breadcrumbs__link {
     color: white !important;
+  }
+
+  .tabs__item
+  {
+    color: white;
   }
 }
