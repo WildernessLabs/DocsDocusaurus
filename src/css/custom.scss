@@ -28,10 +28,10 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   font-family: "Wavehaus-Book";
   font-size: 18px;
+  -webkit-font-smoothing: auto;
 
   a {
     color: $color-brown-light !important;
-    font-weight: bold;
   }
   a:hover {
     text-decoration: underline;
@@ -46,7 +46,18 @@
     }
   }
 
+  aside
+  {
+    border-right: 0;
+  }
+
   main[class^="docMainContainer_"] {
+    border-left: 1px solid var(--ifm-toc-border-color);
+
+    @media screen and (max-width: 996px) {
+      border-left: 0;
+    }
+
     .container {
       padding-top: 0 !important;
       padding-bottom: 0 !important;
@@ -225,6 +236,10 @@
       scrollbar-gutter: auto;
     }
   }
+
+  @media screen and (min-width: 996px) {
+    overflow-x: hidden;
+  }
 }
 
 h1,
@@ -233,7 +248,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Wavehaus-Bold" !important;
+  font-family: "Wavehaus-Book" !important;
+  font-weight: bold;
 }
 
 code {
