@@ -1,67 +1,43 @@
-import React from 'react';
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-
-import styles from './index.module.css';
-
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/Meadow">
-            Meadow Guides
-          </Link>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/Netduino">
-            Netduino
-          </Link>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/Hardware">
-            Hardware + Circuits
-          </Link>
-        </div>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/Hardware/Tutorials/Electronics">
-            Electronics Tutorials
-          </Link>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/api/Meadow">
-            Meadow API
-          </Link>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/api/Meadow.Foundation">
-            Meadow.Foundation API
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
+import React from "react";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import Layout from "@theme/Layout";
+import "../css/components/home-page.scss";
 
 export default function Home(): JSX.Element {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
+    <Layout title={`Hello from ${siteConfig.title}`}>
       <main>
-        <HomepageFeatures />
+        <section id="homepage">
+          <div className="home-container">
+            <header className="hero">
+              <div className="hero-content">
+                <div className="container">
+                  <h1>Default</h1>
+                  <p>
+                    Get up and running with the Meadow Getting Started Guides.
+                    Setup your development environment, configure your Meadow
+                    dev kit, and deploy your first application.
+                  </p>
+                  <a className="button-blue" href="#">
+                    Get Started
+                  </a>
+                </div>
+              </div>
+            </header>
+            <div className="container">
+              <section className="meadow-intro">
+                <h2>Meadow</h2>
+                <hr></hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed metus dui adipiscing nunc commodo at et in. Aliquam, ultrices arcu nulla at eget ultrices ultricies rhoncus, vitae.</p>
+              </section>
+              <section className="meadow-features">good</section>
+              <section className="tutorial-section">huh</section>
+              <section className="events-section">what</section>
+              <section className="sample-projects">neat</section>
+            </div>
+          </div>
+        </section>
       </main>
     </Layout>
   );

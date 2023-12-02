@@ -1,0 +1,87 @@
+@import "../variables.scss";
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+
+  h1,
+  h2 {
+    font-family: "Wavehaus-Bold" !important;
+  }
+
+  h1 {
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 2px;
+    color: $color-blue;
+  }
+}
+
+.hero {
+  background: url("/img/homepage/homepage-banner-image.png");
+  background-color: #f7f7f7 !important;
+  background-position: center right;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  .hero-content {
+    margin: 0 auto;
+    padding-left: 50px;
+    align-self: start;
+    width: 100%;
+
+    p {
+      margin-right: 520px;
+
+      @media screen and (max-width: 1200px) {
+        margin-right: 0;
+      }
+    }
+
+    @media screen and (max-width: 1200px) {
+      max-width: 900px;
+      padding-left: 20px;
+    }
+
+    .button-blue {
+      background: $color-blue;
+      border-radius: 4px;
+      color: #fff !important;
+      padding: 8px 20px;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: none;
+        color: white !important;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("/img/homepage/homepage-banner-image.png");
+    background-position-x: right;
+  }
+}
+
+// Add other styles for elements within the hero section
+
+.meadow-intro,
+.meadow-features,
+.tutorial-section,
+.events-section {
+  // Common styles for these sections
+}
+
+.sample-projects {
+  // Since we're setting the background image inline for React, no need to set it here
+  background-image: url("/img/homepage/projects-banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+[data-theme="dark"] {
+  .hero {
+    background-color: #152527 !important;
+  }
+}
