@@ -4,14 +4,18 @@ title: Meadow OS Deployment
 subtitle: Flashing the Meadow with the latest OS via Meadow.CLI
 ---
 
-When you receive your Meadow board, it will need to have the latest Meadow.OS uploaded, or _flashed_, to it.
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs groupId="operating-systems">
+  <TabItem value="win" label="Windows" default>
+    
+    When you receive your Meadow board, it will need to have the latest Meadow.OS uploaded, or _flashed_, to it.
 
 ## Go to the instructions for your development system
 1. [Windows](#windows)
 2. [macOS](#macos)
 3. [Linux (Debian, Ubuntu)](#linux-debian-ubuntu)
-
-## Windows
 
 [//]: # (Whenever editing these OS sections, make sure any common instructions are edited in the other OS sections as well to keep them in sync with each other.)
 
@@ -95,9 +99,9 @@ When the flashing process has completed with no errors, disconnect and reconnect
 
 Your board is now ready to have a Meadow application deployed to it!
 
-## macOS
-
-[//]: # (Whenever editing these OS sections, make sure any common instructions are edited in the other OS sections as well to keep them in sync with each other.)
+  </TabItem>
+  <TabItem value="mac" label="MacOS">
+    [//]: # (Whenever editing these OS sections, make sure any common instructions are edited in the other OS sections as well to keep them in sync with each other.)
 
 ### Install .NET SDK
 
@@ -278,6 +282,11 @@ Once connected the Meadow device via the USB cable and having put the device int
 ```console
 meadow flash os
 ```
+  </TabItem>
+</Tabs>
+
+
+
 
 #### Option 2 (from normal mode)
 This following will only work if you have a newer version of Meadow OS installed. It is recommended to try option 1 first.
