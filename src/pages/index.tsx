@@ -13,7 +13,7 @@ export default function Home(): JSX.Element {
             <header className="hero mb-80">
               <div className="hero-content">
                 <div className="">
-                  <h1>Default</h1>
+                  <h1>Welcome.</h1>
                   <p>
                     Get up and running with the Meadow Getting Started Guides.
                     Setup your development environment, configure your Meadow
