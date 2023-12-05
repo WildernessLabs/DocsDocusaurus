@@ -25,17 +25,171 @@ export default function Home(): JSX.Element {
                 </div>
               </div>
             </header>
-            <div className="container">
-              <section className="meadow-intro">
+            
+              <section className="meadow-general container">
                 <h2>Meadow</h2>
                 <hr></hr>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed metus dui adipiscing nunc commodo at et in. Aliquam, ultrices arcu nulla at eget ultrices ultricies rhoncus, vitae.</p>
+                <p className="content-primary">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  metus dui adipiscing nunc commodo at et in. Aliquam, ultrices
+                  arcu nulla at eget ultrices ultricies rhoncus, vitae.
+                </p>
+                <div className="wl-grid mb-80">
+                  <div className="wl-card border thick-1 orange radius-8">
+                    <img
+                      className="border only bottom thick-1 orange"
+                      src={`${siteConfig.baseUrl}/img/homepage/card-meadow-apps.png`}
+                    />
+                    <div className="card-content">
+                      <h3>Meadow apps</h3>
+                      <ul className="flat">
+                        <li>
+                          <a href="#">Downloads</a>
+                        </li>
+                        <li>
+                          <a href="#">Events & iObservable</a>
+                        </li>
+                        <li>
+                          <a href="#">Release notes</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div className="wl-card border thick-1 orange radius-8">
+                    <img
+                      className="border only bottom thick-1 orange"
+                      src={`${siteConfig.baseUrl}/img/homepage/card-network.png`}
+                    />
+                    <div className="card-content">
+                      <h3>Network</h3>
+                      <ul className="flat">
+                        <li>
+                          <a href="#">File System</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div className="wl-card border thick-1 orange radius-8">
+                    <img
+                      className="border only bottom thick-1 orange"
+                      src={`${siteConfig.baseUrl}/img/homepage/card-input-output.png`}
+                    />
+                    <div className="card-content">
+                      <h3>Input/Output (I/O)</h3>
+                      <ul className="flat">
+                        <li>
+                          <a href="#">Analog.Digital.PWM</a>
+                        </li>
+                        <li>
+                          <a href="#">Protocols: 12C,SPI,Serial Power</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </section>
-              <section className="meadow-features">good</section>
-              <section className="tutorial-section">huh</section>
-              <section className="events-section">what</section>
-              <section className="sample-projects">neat</section>
-            </div>
+              <section className="meadow-features container">
+                <h2>Meadow</h2>
+                <hr></hr>
+                <p className="content-primary">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  metus dui adipiscing nunc commodo at et in. Aliquam, ultrices
+                  arcu nulla at eget ultrices ultricies rhoncus, vitae.
+                </p>
+                <div className="wl-grid mb-80">
+                  <div className="wl-card border thick-3 blue radius-8 corner">
+                    <div className="card-content">
+                      <h3>
+                        <a href="#">Getting Started</a>
+                      </h3>
+                      <p>Short sentence about getting started</p>
+                      <div className="wl-grid space">
+                        <a>Link #1</a>
+                        <a>Link #2</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="wl-card border thick-3 blue radius-8 corner">
+                    <div className="card-content">
+                      <h3>Peripheral driver library</h3>
+                      <p>Short sentence about getting started</p>
+                      <div className="wl-grid space">
+                        <a>Link #1</a>
+                        <a>Link #2</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="wl-card border thick-3 blue radius-8 corner">
+                    <div className="card-content">
+                      <h3>Library + Frameworks</h3>
+                      <p>Short sentence about getting started</p>
+                      <div className="wl-grid space">
+                        <a>Link #1</a>
+                        <a>Link #2</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section className="meadow-docs container">
+                <div className="wl-grid mb-80">
+                  <div className="wl-card full bg-light-1 pb-50">
+                    <div className="card-content">
+                      <h3>Electronics Tutorial</h3>
+                      <p>
+                        New to electronics? Wanna learn the difference between
+                        voltage and current? Take a dive into electronics the
+                        easy way with our electronics tutorial.
+                      </p>
+                      <div className="wl-grid space">
+                        <a>Start tutorial</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="wl-card full bg-light-2">
+                    <div className="card-content">
+                      <h3>Netduino 3</h3>
+                      <p>
+                        New to electronics? Wanna learn the difference between
+                        voltage and current? Take a dive into electronics the
+                        easy way with our electronics tutorial.
+                      </p>
+                      <div className="wl-grid">
+                        <a>Getting started</a>
+                        <a>About</a>
+                        <a>Netduino.Foundation</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section className="rel-section" >
+                <div className="dev-camp"></div>
+              </section>
+              <section className="events container mb-80">
+                <div className="centered-callout">
+                  <h2>Join us at these upcoming virtual events</h2>
+                  <h3> Bryan, is this the place to post virtual events? Maybe our marketing site instead?
+                  </h3>
+                </div>
+              </section>
+              <section className="rel-section" style={{minHeight:'310px'}}>
+                <div className="sample-projects">
+                  <div className="project-card border radius-8">
+                    <h2>Use our sample projects at Hackster.io to start building your projects today.</h2>
+                    <a href="" className="button-orange-clear">See our projects</a>
+                  </div>
+                </div>
+              </section>
+              <section className="meadow-extra container">
+                <hr></hr>
+                <p>Don't see what you're looking for?</p>
+                <p>Ask a <a href="">question</a>, or make a <a href="">request</a></p>
+              </section>
           </div>
         </section>
       </main>
