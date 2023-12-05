@@ -25,6 +25,30 @@
   .content-primary {
     font-size: 22px;
   }
+
+
+  .meadow-extra
+  {
+    margin-bottom: 80px;
+
+    hr
+    {
+        background-color: #ff8e0e !important;
+        height: 5px;
+    }
+
+    a
+    {
+        color: $color-blue;
+        text-decoration: underline;
+
+        &:hover
+        {
+            text-decoration: none;
+        }
+    }
+  }
+
 }
 
 .hero {
@@ -52,19 +76,6 @@
       max-width: 900px;
       padding-left: 20px;
     }
-
-    .button-blue {
-      background: $color-blue;
-      border-radius: 4px;
-      color: #fff !important;
-      padding: 8px 20px;
-      text-decoration: none;
-
-      &:hover {
-        text-decoration: none;
-        color: white !important;
-      }
-    }
   }
 
   @media screen and (max-width: 1200px) {
@@ -74,20 +85,43 @@
   }
 }
 
-// Add other styles for elements within the hero section
+.rel-section {
+  position: relative;
+  min-height: 250px;
+  margin-bottom: 80px;
 
-.meadow-intro,
-.meadow-features,
-.tutorial-section,
-.events-section {
-  // Common styles for these sections
-}
+  > div {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 100vw;
+    position: absolute;
+  }
 
-.sample-projects {
-  // Since we're setting the background image inline for React, no need to set it here
-  background-image: url("/img/homepage/projects-banner.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  .dev-camp {
+    background-image: url("/img/homepage/dev-camp-temp-desktop.png");
+  }
+
+  .sample-projects {
+    background-image: url("/img/homepage/projects-banner.png");
+    min-height: 310px;
+    text-align: center;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .project-card {
+      background-color: white;
+      border-color: white;
+      max-width: 600px;
+      max-height: 70%;
+      padding: 50px;
+    }
+  }
 }
 
 [data-theme="dark"] {

@@ -1,6 +1,7 @@
 @import "./fonts.scss";
 @import "./variables.scss";
 @import "./layout.scss";
+@import "./components/buttons.scss";
 
 /**
  * Any CSS included here will be global. The classic template
@@ -32,7 +33,7 @@
   -webkit-font-smoothing: auto;
 
   a {
-    color: $color-brown-light !important;
+    color: $color-brown-light;
   }
   a:hover {
     text-decoration: underline;
@@ -279,10 +280,10 @@ code {
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 
   a {
-    color: white !important;
+    color: white;
   }
   a:hover {
-    color: $color-brown-light2 !important;
+    color: $color-brown-light2;
     text-decoration: underline;
   }
 

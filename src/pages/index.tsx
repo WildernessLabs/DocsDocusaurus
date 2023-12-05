@@ -25,8 +25,8 @@ export default function Home(): JSX.Element {
                 </div>
               </div>
             </header>
-            <div className="container">
-              <section className="meadow-general">
+            
+              <section className="meadow-general container">
                 <h2>Meadow</h2>
                 <hr></hr>
                 <p className="content-primary">
@@ -90,7 +90,7 @@ export default function Home(): JSX.Element {
                   </div>
                 </div>
               </section>
-              <section className="meadow-features">
+              <section className="meadow-features container">
                 <h2>Meadow</h2>
                 <hr></hr>
                 <p className="content-primary">
@@ -135,7 +135,7 @@ export default function Home(): JSX.Element {
                   </div>
                 </div>
               </section>
-              <section className="meadow-docs">
+              <section className="meadow-docs container">
                 <div className="wl-grid mb-80">
                   <div className="wl-card full bg-light-1 pb-50">
                     <div className="card-content">
@@ -167,12 +167,29 @@ export default function Home(): JSX.Element {
                   </div>
                 </div>
               </section>
-              <section className="meadow-tuts">what</section>
-              <section className="dev-camp">neat</section>
-              <section className="events">neat</section>
-              <section className="sample-projects">neat</section>
-              <section className="meadow-extra">neat</section>
-            </div>
+              <section className="rel-section" >
+                <div className="dev-camp"></div>
+              </section>
+              <section className="events container mb-80">
+                <div className="centered-callout">
+                  <h2>Join us at these upcoming virtual events</h2>
+                  <h3> Bryan, is this the place to post virtual events? Maybe our marketing site instead?
+                  </h3>
+                </div>
+              </section>
+              <section className="rel-section" style={{minHeight:'310px'}}>
+                <div className="sample-projects">
+                  <div className="project-card border radius-8">
+                    <h2>Use our sample projects at Hackster.io to start building your projects today.</h2>
+                    <a href="" className="button-orange-clear">See our projects</a>
+                  </div>
+                </div>
+              </section>
+              <section className="meadow-extra container">
+                <hr></hr>
+                <p>Don't see what you're looking for?</p>
+                <p>Ask a <a href="">question</a>, or make a <a href="">request</a></p>
+              </section>
           </div>
         </section>
       </main>
