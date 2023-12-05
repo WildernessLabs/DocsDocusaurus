@@ -11,21 +11,29 @@ function useNavbarItems() {
   } catch (err) {
     items = [
       {
-          "href": "/DocsDocusaurus/docs/HackKit/",
-          "label": "Hack Kit Pro"
+        "href": "/DocsDocusaurus/docs/Meadow/Meadow.OS",
+        "label": "Meadow.OS"
+      },
+      {
+          "href": "/DocsDocusaurus/docs/Meadow/",
+          "label": "Meadow.NET"
+      },
+      {
+        "href": "/DocsDocusaurus/docs/Meadow/Meadow.Cloud",
+        "label": "Meadow.Cloud"
       },
       {
           "href": "/DocsDocusaurus/docs/Hardware/",
           "label": "Hardware & Circuits"
       },
       {
-          "href": "/DocsDocusaurus/docs/Meadow/",
-          "label": "Meadow Guides"
+        "href": "/DocsDocusaurus/docs/Hardware/Tutorials",
+        "label": "Electronics Tutorials"
       },
       {
-          "href": "/DocsDocusaurus/docs/Netduino/",
-          "label": "Netduino"
-      }
+        "href": "",
+        "label": "API Docs"
+      },
   ];
   }
 
