@@ -9,10 +9,25 @@ function useNavbarItems() {
   try {
     items = useDocsSidebar().items.filter((item) => item.type === "category");
   } catch (err) {
-    items = [];
+    items = [
+      {
+          "href": "/DocsDocusaurus/docs/HackKit/",
+          "label": "Hack Kit Pro"
+      },
+      {
+          "href": "/DocsDocusaurus/docs/Hardware/",
+          "label": "Hardware & Circuits"
+      },
+      {
+          "href": "/DocsDocusaurus/docs/Meadow/",
+          "label": "Meadow Guides"
+      },
+      {
+          "href": "/DocsDocusaurus/docs/Netduino/",
+          "label": "Netduino"
+      }
+  ];
   }
-
-  console.log(items);
 
   return items;
 }
