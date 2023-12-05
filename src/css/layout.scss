@@ -1,5 +1,11 @@
 @import "./variables.scss";
 
+.wl-container
+{
+    width: 88%;
+    margin: 0 auto;
+}
+
 .wl-grid
 {
     display: flex;
@@ -15,8 +21,9 @@
     .wl-card
     {
         flex: 1;
-        min-width: 354px;
-        max-width: 355px;
+        min-width: 210px;
+        // max-width: 355px;
+        min-height: 250px;
 
         &.full
         {
@@ -27,7 +34,7 @@
         &.corner
         {
             background-image: url("/img/homepage/corner-bg.png");
-            background-size: 80%;
+            background-size:300px;
             background-repeat: no-repeat;
         }
 
@@ -60,7 +67,7 @@
 {
     text-align: center;
     width: 100%;
-    padding: 0 36%;
+    margin: 0 auto;
 }
 
 .border

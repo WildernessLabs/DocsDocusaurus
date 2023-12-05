@@ -12,7 +12,7 @@ export default function Home(): JSX.Element {
           <div className="home-container">
             <header className="hero mb-80">
               <div className="hero-content">
-                <div className="container">
+                <div className="">
                   <h1>Default</h1>
                   <p>
                     Get up and running with the Meadow Getting Started Guides.
@@ -26,7 +26,7 @@ export default function Home(): JSX.Element {
               </div>
             </header>
             
-              <section className="meadow-general container">
+              <section className="meadow-general wl-container">
                 <h2>Meadow</h2>
                 <hr></hr>
                 <p className="content-primary">
@@ -90,7 +90,7 @@ export default function Home(): JSX.Element {
                   </div>
                 </div>
               </section>
-              <section className="meadow-features container">
+              <section className="meadow-features wl-container">
                 <h2>Meadow</h2>
                 <hr></hr>
                 <p className="content-primary">
@@ -135,11 +135,11 @@ export default function Home(): JSX.Element {
                   </div>
                 </div>
               </section>
-              <section className="meadow-docs container">
+              <section className="meadow-docs wl-container">
                 <div className="wl-grid mb-80">
                   <div className="wl-card full bg-light-1 pb-50">
                     <div className="card-content">
-                      <h3>Electronics Tutorial</h3>
+                      <h2>Electronics Tutorial</h2>
                       <p>
                         New to electronics? Wanna learn the difference between
                         voltage and current? Take a dive into electronics the
@@ -152,7 +152,7 @@ export default function Home(): JSX.Element {
                   </div>
                   <div className="wl-card full bg-light-2">
                     <div className="card-content">
-                      <h3>Netduino 3</h3>
+                      <h2>Netduino 3</h2>
                       <p>
                         New to electronics? Wanna learn the difference between
                         voltage and current? Take a dive into electronics the
@@ -170,7 +170,7 @@ export default function Home(): JSX.Element {
               <section className="rel-section" >
                 <div className="dev-camp"></div>
               </section>
-              <section className="events container mb-80">
+              <section className="events  mb-80">
                 <div className="centered-callout">
                   <h2>Join us at these upcoming virtual events</h2>
                   <h3> Bryan, is this the place to post virtual events? Maybe our marketing site instead?
@@ -185,7 +185,7 @@ export default function Home(): JSX.Element {
                   </div>
                 </div>
               </section>
-              <section className="meadow-extra container">
+              <section className="meadow-extra wl-container">
                 <hr></hr>
                 <p>Don't see what you're looking for?</p>
                 <p>Ask a <a href="">question</a>, or make a <a href="">request</a></p>
