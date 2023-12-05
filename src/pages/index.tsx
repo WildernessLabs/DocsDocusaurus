@@ -10,7 +10,7 @@ export default function Home(): JSX.Element {
       <main>
         <section id="homepage">
           <div className="home-container">
-            <header className="hero">
+            <header className="hero mb-80">
               <div className="hero-content">
                 <div className="container">
                   <h1>Default</h1>
