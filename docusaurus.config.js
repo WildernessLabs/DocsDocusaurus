@@ -8,7 +8,7 @@ const getTopNav = () => {
   return [
     {
       "href": "docs/Meadow/Meadow.OS",
-      "label": "Meadow.OS"
+      "label": "Meadow.OS",
     },
     {
         "href": "docs/Meadow",
