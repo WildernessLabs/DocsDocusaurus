@@ -14,6 +14,7 @@ function useNavbarItems(siteConfig) {
 
 function getHrefMatch(href) {
   const isBrowser = useIsBrowser();
+  if(!isBrowser) return false;
   if(!href) return false;
   var pathname = window.location.pathname;
   if(pathname.endsWith('/'))
