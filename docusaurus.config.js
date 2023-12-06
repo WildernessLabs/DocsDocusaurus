@@ -11,7 +11,7 @@ const getTopNav = () => {
       "label": "Meadow.OS"
     },
     {
-        "href": "docs/Meadow/",
+        "href": "docs/Meadow",
         "label": "Meadow.NET"
     },
     {
@@ -19,7 +19,7 @@ const getTopNav = () => {
       "label": "Meadow.Cloud"
     },
     {
-        "href": "docs/Hardware/",
+        "href": "docs/Hardware",
         "label": "Hardware & Circuits"
     },
     {

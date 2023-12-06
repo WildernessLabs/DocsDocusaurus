@@ -15,7 +15,12 @@ function useNavbarItems(siteConfig) {
 function getHrefMatch(href) {
   const isBrowser = useIsBrowser();
   if(!href) return false;
-  return isBrowser ? window.location.pathname.endsWith(href) : false; //isBrowser helps us bypass a build error, where we don't have access to windo.location - https://docusaurus.io/docs/advanced/ssg#useisbrowser
+  var pathname = window.location.pathname;
+  if(pathname.endsWith('/'))
+  {
+    pathname = pathname.substring(pathname.length - 1, -1);
+  }
+  return isBrowser ? pathname.endsWith(href) : false; //isBrowser helps us bypass a build error, where we don't have access to windo.location - https://docusaurus.io/docs/advanced/ssg#useisbrowser
 }
 
 function LinksRow() {
