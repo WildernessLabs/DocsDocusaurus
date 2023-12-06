@@ -57,13 +57,6 @@ const sidebars = {
     },
   ],
 
-  // testSidebar: [
-  //   {
-  //     type: 'category',
-  //     label: 'HackKit',
-  //     items: ['HackKit/index'],
-  //   },
-  // ],
 };
 
 module.exports = sidebars;
