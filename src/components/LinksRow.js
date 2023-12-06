@@ -1,58 +1,32 @@
 // src/components/LinksRow.js
 import React from "react";
 import { useDocsSidebar } from "@docusaurus/theme-common/internal";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useIsBrowser from "@docusaurus/useIsBrowser";
 import "../css/components/link-row.scss";
 
-function useNavbarItems() {
+function useNavbarItems(siteConfig) {
   let items;
-  try {
-    items = useDocsSidebar().items.filter((item) => item.type === "category");
-  } catch (err) {
-    items = [
-      {
-        "href": "/DocsDocusaurus/docs/Meadow/Meadow.OS",
-        "label": "Meadow.OS"
-      },
-      {
-          "href": "/DocsDocusaurus/docs/Meadow/",
-          "label": "Meadow.NET"
-      },
-      {
-        "href": "/DocsDocusaurus/docs/Meadow/Meadow.Cloud",
-        "label": "Meadow.Cloud"
-      },
-      {
-          "href": "/DocsDocusaurus/docs/Hardware/",
-          "label": "Hardware & Circuits"
-      },
-      {
-        "href": "/DocsDocusaurus/docs/Hardware/Tutorials",
-        "label": "Electronics Tutorials"
-      },
-      {
-        "href": "",
-        "label": "API Docs"
-      },
-  ];
-  }
+  items = siteConfig.customFields.topNav;
 
   return items;
 }
 
 function getHrefMatch(href) {
   const isBrowser = useIsBrowser();
-  return isBrowser ? window.location.pathname.includes(href) : false; //isBrowser helps us bypass a build error, where we don't have access to windo.location - https://docusaurus.io/docs/advanced/ssg#useisbrowser
+  if(!href) return false;
+  return isBrowser ? window.location.pathname.endsWith(href) : false; //isBrowser helps us bypass a build error, where we don't have access to windo.location - https://docusaurus.io/docs/advanced/ssg#useisbrowser
 }
 
 function LinksRow() {
-  const items = useNavbarItems();
+  let { siteConfig } = useDocusaurusContext();
+  const items = useNavbarItems(siteConfig);
   return (
     <div className="links-row">
       {items.map((item, i) => (
         <a
           key={i}
-          href={item.href}
+          href={`${siteConfig.baseUrl}${item.href}`}
           className={getHrefMatch(item.href) ? "active" : ""}
         >
           {item.label}

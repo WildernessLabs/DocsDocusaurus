@@ -4,6 +4,35 @@
 const lightCodeTheme = require('./src/themes/wlLight');
 const darkCodeTheme = require('./src/themes/wlDark');
 
+const getTopNav = () => {
+  return [
+    {
+      "href": "docs/Meadow/Meadow.OS",
+      "label": "Meadow.OS"
+    },
+    {
+        "href": "docs/Meadow/",
+        "label": "Meadow.NET"
+    },
+    {
+      "href": "docs/Meadow/Meadow.Cloud",
+      "label": "Meadow.Cloud"
+    },
+    {
+        "href": "docs/Hardware/",
+        "label": "Hardware & Circuits"
+    },
+    {
+      "href": "docs/Hardware/Tutorials",
+      "label": "Electronics Tutorials"
+    },
+    {
+      "href": "",
+      "label": "API Docs"
+    },
+];
+}
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Wilderness Labs Developer Portal',
@@ -12,7 +41,8 @@ const config = {
   customFields: {
     email: 'hello@wildernesslabs.co',
     twitter_username: 'wildernesslabs',
-    github_username: 'wildernesslabs'
+    github_username: 'wildernesslabs',
+    topNav: getTopNav()
   },
 
   plugins: ['docusaurus-plugin-sass'],
